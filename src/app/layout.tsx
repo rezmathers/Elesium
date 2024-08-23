@@ -40,7 +40,7 @@ export default function RootLayout({
         <Stats/>
         <Clients/>
         <BentoGridDemo/>
-        {/* <MansoryGrid/> */}
+        <MansoryGrid/>
         <InfiniteMovingCardsDemo/>
         <Faq/>
         <Footer/>
