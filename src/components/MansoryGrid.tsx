@@ -2,7 +2,7 @@ import React from 'react'
 
 const MansoryGrid = () => {
   return (
-    <section className="items-center justify-center xs:mx-4 my-24">
+    <section className="items-center justify-center xs:mx-4 my-24" id='about'>
 <div className='max-w-7xl m-auto'>
       
 
