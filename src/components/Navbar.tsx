@@ -48,11 +48,11 @@ function Navbar({ className }: { className?: string }) {
               type="button"
               className="text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:border-l-gray-500 dark:hover:bg-gray-700"
             >
-              Contact Now
+              Apply Now
             </button>
             <button
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none  dark:text-gray-400 "
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none dark:text-gray-400"
               aria-controls="navbar-sticky"
               aria-expanded={isMenuOpen}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -79,7 +79,7 @@ function Navbar({ className }: { className?: string }) {
             className={cn(
               "items-center justify-between w-full md:flex md:w-auto md:order-1 overflow-hidden transition-all duration-500 ease-in-out",
               {
-                "max-h-0 opacity-0": !isMenuOpen,
+                "max-h-0 opacity-0 md:max-h-full md:opacity-100": !isMenuOpen,
                 "max-h-screen opacity-100": isMenuOpen,
               }
             )}

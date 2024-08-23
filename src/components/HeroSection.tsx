@@ -12,7 +12,7 @@ const HeroSection = () => {
       </span>
         <div className="flex flex-row sm:flex-col items-center gap-4 mt-6 xs:justify-start">
           <button className="py-4 px-6 text-lg sm:text-md hover:bg-slate-400 bg-slate-500/[0.07] transition duration-200 rounded-lg text-slate-500 hover:text-black backdrop-blur-xl border border-white">
-            Order now
+            Apply now
           </button>
         </div>
       </div>
