@@ -2,19 +2,19 @@ import React from 'react'
 
 const Stats = () => {
   return (
-    <section>
+    <section id='about'>
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl  py-16  md:py-20 xs:px-4">
         {/* Title */}
         <div className="mb-12 flex flex-col md:flex-row">
-          <h2 className="mb-8 text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16">
+          <h2 className=" text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16">
              About Elesium
           </h2>
           
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* FactsCard */}
-          <div className="bg-gray-100/5 rounded-lg py-10 px-5 flex flex-col justify-between h-80">
+          <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
               <h3>10,000+</h3>
               <p>Users</p>
@@ -26,7 +26,7 @@ const Stats = () => {
             </p>
           </div>
           {/* FactsCard */}
-          <div className="bg-gray-100/5 rounded-lg py-10 px-5 flex flex-col justify-between h-80">
+          <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
               <h3>460+</h3>
               <p>Components</p>
@@ -38,7 +38,7 @@ const Stats = () => {
             </p>
           </div>
           {/* FactsCard */}
-          <div className="bg-gray-100/5 rounded-lg py-10 px-5 flex flex-col justify-between h-80">
+          <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
               <h3>50%</h3>
               <p>Time Savings</p>
@@ -50,7 +50,7 @@ const Stats = () => {
             </p>
           </div>
           {/* FactsCard */}
-          <div className="bg-gray-100/5 rounded-lg py-10 px-5 flex flex-col justify-between h-80">
+          <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
               <h3>5-Star</h3>
               <p>User Satisfaction</p>

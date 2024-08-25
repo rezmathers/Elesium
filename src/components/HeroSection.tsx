@@ -1,5 +1,6 @@
 import React from "react";
 import { FlipWordsDemo } from "./FlipWodsDemo";
+import ContactPage from "./ContactPage";
 
 
 const HeroSection = () => {
@@ -11,9 +12,7 @@ const HeroSection = () => {
         Elesium Online
       </span>
         <div className="flex flex-row sm:flex-col items-center gap-4 mt-6 xs:justify-start">
-          <button className="py-4 px-6 text-lg sm:text-md hover:bg-slate-400 bg-slate-500/[0.07] transition duration-200 rounded-lg text-slate-500 hover:text-black backdrop-blur-xl border border-white">
-            Apply now
-          </button>
+         <ContactPage/>
         </div>
       </div>
       <div className="min-h-80 sm:w-1/2 flex flex-1 w-full rounded-xl  items-center justify-center overflow-hidden mb-12 object-fill">

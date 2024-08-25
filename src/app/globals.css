@@ -16,6 +16,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   overflow: auto;
   overflow-x: hidden; /* Only hides horizontal scrollbar */

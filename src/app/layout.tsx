@@ -16,6 +16,7 @@ import Clients from "@/components/Clients";
 import Footer from "@/components/Footer";
 import Stats from "@/components/Stats";
 import Faq from "@/components/Faq";
+import ContactPage from "@/components/ContactPage";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,6 +45,7 @@ export default function RootLayout({
         <InfiniteMovingCardsDemo/>
         <Faq/>
         <Footer/>
+       
         {/* </TracingBeam> */}
       </body>
     </html>
