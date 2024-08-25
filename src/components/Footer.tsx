@@ -1,11 +1,11 @@
 import React from 'react'
-import Image from 'next/image'
+
 const Footer = () => {
   return (
     <footer className=' backdrop-blur-3xl  border-t border-white/10 ' id='footer'>
     <div className="flex flex-col mx-auto w-full max-w-7xl  py-16 md:py-20 text-white xs:px-4">
       {/* LOGO */}
-      <Image src="./logo.svg" alt="" className='h-10 w-10 lg:hidden'/>
+      <img src="./logo.svg" alt="" className='h-10 w-10 lg:hidden'/>
       {/* MIDDLE CONTAINER */}
       <div className="lg:mt-20 mt-10 lg:flex w-full lg:flex-row lg:justify-between">
         {/* NEWSLETTER & EMAIL */}
@@ -45,7 +45,7 @@ const Footer = () => {
         {/* FOOTER LINKS */}
         <div className="flex lg:ml-10 relative mt-10 lg:mt-0">
           {/* LOGO */}
-          <Image src="./logo.svg" alt="Elesuim" className='lg:absolute lg:-top-28 hidden lg:block h-14'/>
+          <img src="./logo.svg" alt="Elesuim" className='lg:absolute lg:-top-28 hidden lg:block h-14'/>
           <div className="flex grow flex-row flex-wrap lg:flex-nowrap lg:items-start lg:justify-end">
             {/* LINK BLOCK */}
             <div className="lg:mt-0 my-5 mr-5 flex max-w-52 grow basis-24 flex-col space-y-5">
