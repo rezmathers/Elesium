@@ -60,7 +60,7 @@ const ContactPage = () => {
                 </h3>
                 <div className="max-w-sm mx-auto">
                   <p className="mt-2 text-sm text-gray-600 dark:text-neutral-400">
-                    "Compare to" Price, Bulk Discount Pricing, Inventory
+                    Compare to Price, Bulk Discount Pricing, Inventory
                     Tracking
                     <a
                       className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
@@ -111,7 +111,7 @@ const ContactPage = () => {
 
                   <div className="grow">
                     <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
-                      "Compare to" price
+                      Compare to price
                     </h3>
                     <p className="text-sm text-gray-500 dark:text-neutral-500">
                       Use this feature when you want to put a product on sale or

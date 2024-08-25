@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image";
 import React, { useState } from "react";
 
 const Faq = () => {
@@ -52,7 +52,7 @@ const Faq = () => {
             </div>
             <div className="mb-6 h-full w-full overflow-auto bg-gray-100/5 p-8 rounded-md">
               <div className="flex flex-row gap-4">
-                <img
+                <Image
                   src="https://via.placeholder.com/150"
                   alt="Placeholder"
                   className="inline-block h-12 w-12 object-cover rounded-full"
