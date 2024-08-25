@@ -17,6 +17,7 @@ import Footer from "@/components/Footer";
 import Stats from "@/components/Stats";
 import Faq from "@/components/Faq";
 import ContactPage from "@/components/ContactPage";
+import FeatureSectionDemo from "@/components/blocks/features-section-demo-2"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -39,8 +40,10 @@ export default function RootLayout({
         <NavbarDemo/>
         <HeroSection/>
         <Stats/>
+        <FeatureSectionDemo/>
         <Clients/>
         <BentoGridDemo/>
+        
         <MansoryGrid/>
         <InfiniteMovingCardsDemo/>
         <Faq/>

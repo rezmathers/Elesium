@@ -2,7 +2,7 @@ import React from 'react'
 
 const Stats = () => {
   return (
-    <section id='about' >
+    <section id='about'className='text-slate-300'>
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl  py-16  md:py-20 xs:px-4">
         {/* Title */}

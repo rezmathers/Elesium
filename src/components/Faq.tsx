@@ -36,7 +36,7 @@ const Faq = () => {
   ];
 
   return (
-    <section>
+    <section className="text-white">
       <div className="py-16 md:py-20 mx-auto w-full max-w-7xl xs:px-4">
         <div className="flex flex-col items-start lg:flex-row lg:space-x-20">
           <div className="lg:flex-[1_1_500px] w-full flex-none">
@@ -50,27 +50,27 @@ const Faq = () => {
                 </p>
               </div>
             </div>
-            <div className="mb-6 h-full w-full overflow-auto bg-gray-100/5 p-8 rounded-md">
+            <div className="mb-6 h-full w-full overflow-auto bg-gray-100/20 p-8 rounded-md border border-slate-300/35">
               <div className="flex flex-row gap-4">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="./logo.svg"
                   alt="Placeholder"
-                  className="inline-block h-12 w-12 object-cover rounded-full"
+                  className="inline-block h-12 w-12 object-cover rounded-full p-1"
                 />
                 <div className="flex flex-col gap-1.5">
                   <h5 className="text-xl font-bold">Still have questions?</h5>
                   <div className="max-w-sm">
-                    <p className="text-gray-500 text-sm sm:text-base">
+                    <p className="text-white text-sm sm:text-base">
                       Can’t find the answer you’re looking for? Please chat to
                       our support.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="mb-6 mt-8 h-[0.5px] w-full bg-gray-300/5"></div>
+              <div className="mb-6 mt-8 h-[0.5px] w-full bg-slate-300/30"></div>
               <a
                 href="#"
-                className="inline-block items-center rounded-md bg-black px-6 py-3 text-center font-semibold text-white"
+                className="inline-block items-center rounded-md bg-white/20 px-6 py-3 text-center font-semibold text-white border border-slate-200/20"
               >
                 Get In Touch
               </a>
@@ -80,7 +80,7 @@ const Faq = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="mb-6 w-full overflow-hidden bg-gray-100/5 p-8 rounded-md"
+                className="mb-6 w-full overflow-hidden bg-slate-100/15 border border-slate-300/25 p-8 rounded-md"
               >
                 <div
                   className="flex cursor-pointer items-start justify-between"
@@ -89,12 +89,12 @@ const Faq = () => {
                   <p className="text-xl font-bold">{faq.title}</p>
                   <div className="relative ml-10 mt-1 flex h-5 w-5 items-center justify-center">
                     <div
-                      className={`absolute h-5 w-0.5 bg-black transition-transform duration-300 ${
+                      className={`absolute h-5 w-0.5 bg-white transition-transform duration-300 ${
                         openFAQ === index ? "rotate-90" : ""
                       }`}
                     ></div>
 
-                    <div className="h-0.5 w-5 bg-black"></div>
+                    <div className="h-0.5 w-5 bg-white"></div>
                   </div>
                 </div>
                 {openFAQ === index && (

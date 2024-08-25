@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import ContactPage from "./ContactPage";
 
 export function NavbarDemo() {
   return <Navbar />;
@@ -44,15 +45,10 @@ function Navbar({ className }: { className?: string }) {
             </span>
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
+            <ContactPage/>
+            {/* <button
               type="button"
-              className="text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:border-l-gray-500 dark:hover:bg-gray-700"
-            >
-              Contact Now
-            </button>
-            <button
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none dark:text-gray-400"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hidden focus:outline-none dark:text-gray-400"
               aria-controls="navbar-sticky"
               aria-expanded={isMenuOpen}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -73,7 +69,7 @@ function Navbar({ className }: { className?: string }) {
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
-            </button>
+            </button> */}
           </div>
           <div
             className={cn(

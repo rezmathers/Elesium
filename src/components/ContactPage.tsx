@@ -34,7 +34,7 @@ const ContactPage = () => {
         <button
           type="button"
           onClick={handleOpenModal}
-         className="text-white bg-gray-400 hover:bg-blue-800 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:border-l-gray-500 dark:hover:bg-gray-700"
+         className="text-white text-lg px-10 bg-gray-400/20  border border-slate-400/50 font-light rounded-lg py-2 text-center"
         >
           Contact Now
         </button>

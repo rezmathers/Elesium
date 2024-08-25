@@ -20,13 +20,13 @@ const Footer = () => {
               </label>
               <input
                 type="email"
-                className="font-inter relative mt-4 w-full rounded-md border border-black bg-gray-100/5 px-6 py-4 text-base placeholder:text-slate-400 text-slate-300"
+                className="font-inter relative mt-4 w-full rounded-md border border-black bg-white/10 px-6 py-4 text-base placeholder:text-slate-400 text-slate-300"
                 placeholder="Enter your email"
                 name="email"
               />
               <button
                 type="submit"
-                className="font-inter absolute right-0 bottom-0 lg:w-28 rounded-tr-md rounded-br-md border border-black backdrop-blur-3xl px-6 py-4 text-base text-white"
+                className="font-inter absolute right-0 bottom-0 lg:w-28 rounded-tr-md rounded-br-md bg-white/50 border border-black backdrop-blur-3xl px-6 py-4 text-base text-white"
               >
                 Join
               </button>
