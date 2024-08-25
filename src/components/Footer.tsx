@@ -26,7 +26,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="font-inter absolute right-0 bottom-0 lg:w-28 rounded-tr-md rounded-br-md bg-white/50 border border-black backdrop-blur-3xl px-6 py-4 text-base text-white"
+                className="font-inter absolute right-0 bottom-0 lg:w-28 rounded-tr-md rounded-br-md bg-white/10 border border-black backdrop-blur-3xl px-6 py-4 text-base text-white"
               >
                 Join
               </button>

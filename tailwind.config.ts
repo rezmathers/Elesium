@@ -1,3 +1,4 @@
+import { Cinzel } from "next/font/google";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,6 +9,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily:{
+        Cinzel:['Cinzel' , 'serif'],
+      },
       screens:{
         'xs': '300px'
       },

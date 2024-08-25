@@ -29,16 +29,16 @@ const ContactPage = () => {
   }, [modalRef]);
 
   return (
-    <section id="contact">
-      <div className="">
+    <section id="contact" >
+      
         <button
           type="button"
           onClick={handleOpenModal}
-         className="text-white text-lg px-10 bg-gray-400/20  border border-slate-400/50 font-light rounded-lg py-2 text-center"
+        className=" rounded-md bg-black/20 px-8 py-4 text-center font-semibold text-white lg:mr-8 border border-slate-300/50"
         >
           Contact Now
         </button>
-      </div>
+      
 
       {isModalOpen && (
         <div

@@ -34,17 +34,17 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       ref={menuRef}
-      className={cn("fixed top-0 inset-x-0 max-w-7xl mx-auto z-50", className)}
+      className={cn("  max-w-7xl z-50", className)}
     >
-      <nav className="fixed w-full z-20 top-0 start-0 border-b dark:border-gray-600 backdrop-blur-3xl bg-slate-100/5">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 xs:px-4">
+      <nav className="w-screen  items-center justify-center bg-gray-300/10">
+        <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4">
           <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/logo.svg" className="h-8" alt="Elesium Logo" />
             <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">
               Elesium
             </span>
           </a>
-          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <div className="flex md:order-2  md:space-x-0 rtl:space-x-reverse xs:justify-between">
             <ContactPage/>
             {/* <button
               type="button"

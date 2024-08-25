@@ -16,6 +16,7 @@ import Clients from "@/components/Clients";
 import Footer from "@/components/Footer";
 import Stats from "@/components/Stats";
 import Faq from "@/components/Faq";
+import NewHero from "@/components/NewHero"
 import ContactPage from "@/components/ContactPage";
 import FeatureSectionDemo from "@/components/blocks/features-section-demo-2"
 
@@ -35,21 +36,23 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
-        {/* <TracingBeam className="max-w-7xl"> */}
+        
         <AuroraBackgroundDemo/>
         <NavbarDemo/>
-        <HeroSection/>
+        <NewHero/>
+        
+       
         <Stats/>
         <FeatureSectionDemo/>
         <Clients/>
         <BentoGridDemo/>
         
-        <MansoryGrid/>
+        {/* <MansoryGrid/> */}
         <InfiniteMovingCardsDemo/>
         <Faq/>
         <Footer/>
        
-        {/* </TracingBeam> */}
+        
       </body>
     </html>
   );
