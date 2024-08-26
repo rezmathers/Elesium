@@ -4,7 +4,7 @@ import ContactPage from './ContactPage'
 
 const NewHero = () => {
   return (
-    <header className='h-screen'>
+    <header className='h-fit'>
       {/* Hero top */}
       <div className="bg-gray-300/10 border-b border-slate-200/30 xs:px-4 pb-8">
         {/* Container */}
@@ -18,7 +18,7 @@ const NewHero = () => {
           <div className="flex items-stretch  pt-12 ">
             <a
               href="#about"
-              className="mr-6 rounded-md bg-black/30 px-8 py-4 text-center font-semibold text-white lg:mr-8"
+              className="mr-6 rounded-md bg-black/30 px-8 py-4 text-center font-semibold text-white lg:mr-8 border border-slate-50/50"
             >
               Get Started
             </a>
@@ -41,9 +41,9 @@ const NewHero = () => {
           </div>
           
           <img
-            src="./img.png"
-            alt=""
-            className="relative bottom-0 right-0 mt-12 w-[480px] object-cover lg:absolute lg:mt-0 lg:h-[480px] rounded-md"
+            src="https://images.pexels.com/photos/3887985/pexels-photo-3887985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="."
+            className="relative bottom-0 right-0 mt-12 w-[480px] object-cover lg:absolute lg:mt-0 lg:h-[480px] rounded-md border border-slate-300/50"
           />
         </div>
       </div>

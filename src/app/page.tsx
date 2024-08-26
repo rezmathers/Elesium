@@ -8,7 +8,6 @@ import Footer from "@/components/Footer";
 import Stats from "@/components/Stats";
 import Faq from "@/components/Faq";
 import NewHero from "@/components/NewHero"
-import ContactPage from "@/components/ContactPage";
 import FeatureSectionDemo from "@/components/blocks/features-section-demo-2"
 
 
