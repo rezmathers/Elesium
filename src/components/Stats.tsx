@@ -1,4 +1,5 @@
 import React from 'react'
+import NumberTicker from './magicui/number-ticker'
 
 const Stats = () => {
   return (
@@ -7,7 +8,7 @@ const Stats = () => {
       <div className="mx-auto w-full max-w-7xl  py-16  md:py-20 xs:px-4">
         {/* Title */}
         <div className="mb-12 flex flex-col md:flex-row">
-          <h2 className=" text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16">
+          <h2 className=" text-3xl max-w-lg font-bold  md:text-5xl cinzel-decorative-regular">
              About Elesium
           </h2>
           
@@ -16,7 +17,7 @@ const Stats = () => {
           {/* FactsCard */}
           <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
-              <h3>10,000+</h3>
+              <NumberTicker value={10000}/>+
               <p>Users</p>
             </div>
 
@@ -28,7 +29,7 @@ const Stats = () => {
           {/* FactsCard */}
           <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
-              <h3>460+</h3>
+            <NumberTicker value={460}/>+
               <p>Components</p>
             </div>
 
@@ -40,7 +41,7 @@ const Stats = () => {
           {/* FactsCard */}
           <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
-              <h3>50%</h3>
+              <h2><NumberTicker value={50}/>%</h2>
               <p>Time Savings</p>
             </div>
 
@@ -52,7 +53,7 @@ const Stats = () => {
           {/* FactsCard */}
           <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
-              <h3>5-Star</h3>
+              <h2><NumberTicker value={5}/>-Star</h2>
               <p>User Satisfaction</p>
             </div>
 

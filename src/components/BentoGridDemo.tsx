@@ -13,7 +13,7 @@ import {
 
 export function BentoGridDemo() {
   return (
-    <section className=" items-center justify-center xs:mx-4 mb-24">
+    <section className=" items-center justify-center xs:mx-4 mb-24 h-screen">
         <BentoGrid className="max-w-7xl mx-auto">
       {items.map((item, i) => (
         <BentoGridItem

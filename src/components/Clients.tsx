@@ -2,7 +2,7 @@ import React from "react";
 
 const Clients = () => {
   return (
-    <div className="max-w-7xl py-10 xs:px-4 lg:py-14 mx-auto">
+    <section className="max-w-7xl py-10 xs:px-4 lg:py-14 mx-auto  ">
       <div className="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
         <h2 className="text-gray-600 dark:text-neutral-400">
           Trusted by Open Source, enterprise, and more than 99,000 of you
@@ -235,9 +235,9 @@ const Clients = () => {
         </svg>
       </div>
 
-      <div className="mt-8 text-center">
+      <div className="mt-8 text-right">
         <a
-          className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+          className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
           href="#"
         >
           Read case studies
@@ -257,7 +257,7 @@ const Clients = () => {
           </svg>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

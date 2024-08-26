@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link"; // Import Link from next/link
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import ContactPage from "./ContactPage";
 
 export function NavbarDemo() {
@@ -34,17 +34,17 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       ref={menuRef}
-      className={cn("  max-w-7xl z-50", className)}
+      className={cn("max-w-7xl z-50", className)}
     >
-      <nav className="w-screen  items-center justify-center bg-gray-300/10">
+      <nav className="w-screen items-center justify-center bg-gray-300/10">
         <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4">
-          <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/logo.svg" className="h-8" alt="Elesium Logo" />
-            <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-4xl whitespace-nowrap text-white font-Cinzel tracking-widest">
               Elesium
             </span>
-          </a>
-          <div className="flex md:order-2  md:space-x-0 rtl:space-x-reverse xs:justify-between">
+          </Link>
+          <div className="flex md:order-2 md:space-x-0 rtl:space-x-reverse xs:justify-between">
             <ContactPage/>
             {/* <button
               type="button"
@@ -83,41 +83,41 @@ function Navbar({ className }: { className?: string }) {
           >
             <ul className="flex flex-col py-4 font-medium bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-transparent">
               <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                <Link
+                  href="#about"
+                  className="block py-2 px-3 text-slate-400 md:p-0 hover:text-white"
                   aria-current="page"
                   onClick={handleLinkClick} // Close the menu on click
                 >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  onClick={handleLinkClick} // Close the menu on click
-                >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 px-3 text-slate-400 md:p-0 hover:text-white"
                   onClick={handleLinkClick} // Close the menu on click
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#footer"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                <Link
+                  href="/caseStudy"
+                  className="block py-2 px-3 text-slate-400 md:p-0 hover:text-white"
                   onClick={handleLinkClick} // Close the menu on click
                 >
-                  Contact
-                </a>
+                  Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="block py-2 px-3 text-slate-400 md:p-0 hover:text-white"
+                  onClick={handleLinkClick} // Close the menu on click
+                >
+                  Testimonials
+                </Link>
               </li>
             </ul>
           </div>
