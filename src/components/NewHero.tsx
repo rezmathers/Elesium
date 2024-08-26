@@ -45,14 +45,14 @@ const NewHero = () => {
             </p>
           </div>
           {/* Image */}
-          <div  className="relative bottom-0 right-0 mt-12 w-[480px] object-cover lg:absolute lg:mt-0 lg:h-[480px] rounded-md border border-white">
+          {/* <div  className="relative bottom-0 right-0 mt-12 w-[480px] object-cover lg:absolute lg:mt-0 lg:h-[480px] rounded-md border border-white">
 
-          </div>
-          {/* <img
+          </div> */}
+          <img
             src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074"
             alt=""
             className="relative bottom-0 right-0 mt-12 w-[480px] object-cover lg:absolute lg:mt-0 lg:h-[480px] rounded-md"
-          /> */}
+          />
         </div>
       </div>
     </header>
