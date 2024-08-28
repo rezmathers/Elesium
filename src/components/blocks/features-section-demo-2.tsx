@@ -60,7 +60,7 @@ export default function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 max-w-7xl px-0 mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 max-w-7xl px-4 mx-auto">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

@@ -1,6 +1,8 @@
 import React from 'react'
 import { FlipWordsDemo } from './FlipWodsDemo'
 import ContactPage from './ContactPage'
+import ShineBorder from './magicui/shine-border'
+import BlurFade from './magicui/blur-fade'
 
 const NewHero = () => {
   return (
@@ -40,11 +42,15 @@ const NewHero = () => {
             The Social Media Agency For Architects And Interior Designers. We Craft Strategies That Showcase Your Work, Build Your Brand, And Connect You With Clients Who Value Design</p>
           </div>
           
-          <img
+          
+      <img
             src="https://images.pexels.com/photos/3887985/pexels-photo-3887985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="."
             className="relative bottom-0 right-0 mt-12 w-[480px] object-cover lg:absolute lg:mt-0 lg:h-[480px] rounded-md border border-slate-300/50"
           />
+
+
+
         </div>
       </div>
     </header>

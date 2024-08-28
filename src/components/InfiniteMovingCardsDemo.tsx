@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <section className="h-screen">
+    <section className="h-screen relative">
       <h2 className=" text-3xl max-w-7xl font-bold md:mb-12 md:text-5xl lg:mb-16 cinzel-decorative-regular mx-auto">
              Testimonials
           </h2>

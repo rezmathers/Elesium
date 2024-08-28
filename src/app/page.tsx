@@ -18,8 +18,8 @@ export default function Home() {
         <NavbarDemo/>
         <NewHero/>
         <Stats/>
-        <Clients/>
         <FeatureSectionDemo/>
+        <Clients/>
         <BentoGridDemo/>
         <InfiniteMovingCardsDemo/>
         <Faq/>
