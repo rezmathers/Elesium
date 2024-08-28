@@ -62,7 +62,7 @@ const Stats = () => {
           </div></BlurFade>
           
           {/* FactsCard */}
-          <BlurFade delay={0.25} inView><div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
+          <BlurFade delay={1.25} inView><div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-80 border border-white/40">
             <div className="text-xl font-semibold">
               <h2><NumberTicker value={5}/>-Star</h2>
               <p>User Satisfaction</p>
