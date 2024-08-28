@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Clients = () => {
@@ -236,9 +237,9 @@ const Clients = () => {
       </div>
 
       <div className="mt-8 text-right">
-        <a
+        <Link
           className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-          href="#"
+          href="/caseStudy"
         >
           Read case studies
           <svg
@@ -255,7 +256,7 @@ const Clients = () => {
           >
             <path d="m9 18 6-6-6-6" />
           </svg>
-        </a>
+        </Link>
       </div>
     </section>
   );
