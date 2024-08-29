@@ -43,7 +43,7 @@ const ContactPage = () => {
       {isModalOpen && (
         <div
           id="hs-modal-upgrade-to-pro"
-         className="fixed left-0 top-0 z-50 w-screen h-screen flex justify-center items-center backdrop-blur-3xl bg-black/50 xs:p-4"
+         className="fixed left-0 top-0 z-[100] w-screen h-screen flex justify-center items-center backdrop-blur-3xl bg-black/50 xs:p-4"
           role="dialog"
           tabIndex={-1}
           aria-labelledby="hs-modal-upgrade-to-pro-label"

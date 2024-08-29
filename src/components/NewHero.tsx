@@ -1,14 +1,14 @@
 import React from 'react'
 import { FlipWordsDemo } from './FlipWodsDemo'
 import ContactPage from './ContactPage'
-import ShineBorder from './magicui/shine-border'
-import BlurFade from './magicui/blur-fade'
+
+
 
 const NewHero = () => {
   return (
-    <header className='h-fit'>
+    <header className='h-fit z-10'>
       {/* Hero top */}
-      <div className="backdrop-blur-3xl  border-b border-slate-200/30 xs:px-4 pb-8">
+      <div className="z-30 border-b border-slate-200/30 xs:px-4 pb-8 ">
         {/* Container */}
         <div className="mx-auto max-w-7xl py-8  md:py-14">
           {/* Title */}

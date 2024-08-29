@@ -14,7 +14,7 @@ import {
 export function BentoGridDemo() {
   return (
     <section className=" items-center justify-center xs:mx-4 h-fit pt-32">
-      <h2 className=" text-3xl max-w-7xl font-bold md:text-5xl  cinzel-decorative-regular mx-auto text-white xs:px-4 md:px-0">
+      <h2 className=" text-3xl max-w-7xl font-bold md:text-5xl  cinzel-decorative-regular mx-auto text-white">
              Services
           </h2>
         <BentoGrid className="max-w-7xl mx-auto pt-4">
