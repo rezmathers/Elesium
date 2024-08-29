@@ -10,6 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import BlurFade from "./magicui/blur-fade";
 
 export function BentoGridDemo() {
   return (
@@ -17,8 +18,11 @@ export function BentoGridDemo() {
       <h2 className=" text-3xl max-w-7xl font-bold md:text-5xl  cinzel-decorative-regular mx-auto text-white">
              Services
           </h2>
+          <BlurFade>
         <BentoGrid className="max-w-7xl mx-auto pt-4">
+        
       {items.map((item, i) => (
+       
         <BentoGridItem
           key={i}
           title={item.title}
@@ -27,8 +31,11 @@ export function BentoGridDemo() {
           icon={item.icon}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
+        
       ))}
+      
     </BentoGrid>
+    </BlurFade>
     </section>
   );
 }
