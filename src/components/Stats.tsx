@@ -4,11 +4,11 @@ import BlurFade from './magicui/blur-fade'
 
 const Stats = () => {
   return (
-    <section id='about'className='text-slate-300'>
+    <section id='about'className='text-slate-300 pt-32'>
       {/* Container */}
-      <div className="mx-auto w-full max-w-7xl  py-16  md:py-20 xs:px-4">
+      <div className="md:px-0 mx-auto w-full max-w-7xl xs:px-4">
         {/* Title */}
-        <BlurFade delay={0.25} inView>
+        {/* <BlurFade delay={0.25} inView>
         <div className="mb-12 flex flex-col md:flex-row">
           <h2 className=" text-3xl max-w-lg font-bold  md:text-5xl cinzel-decorative-regular">
              About Elesium
@@ -16,7 +16,7 @@ const Stats = () => {
           
         </div>
         </BlurFade>
-        
+         */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* FactsCard */}
           <BlurFade delay={0.5} inView>

@@ -36,7 +36,7 @@ function Navbar({ className }: { className?: string }) {
       ref={menuRef}
       className={cn("max-w-7xl z-50", className)}
     >
-      <nav className="w-screen items-center justify-center bg-gray-300/10">
+      <nav className="w-screen items-center justify-center backdrop-blur-3xl ">
         <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4">
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/logo.svg" className="h-8" alt="Elesium Logo" />

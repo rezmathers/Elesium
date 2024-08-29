@@ -8,7 +8,7 @@ const NewHero = () => {
   return (
     <header className='h-fit'>
       {/* Hero top */}
-      <div className="bg-gray-300/10 border-b border-slate-200/30 xs:px-4 pb-8">
+      <div className="backdrop-blur-3xl  border-b border-slate-200/30 xs:px-4 pb-8">
         {/* Container */}
         <div className="mx-auto max-w-7xl py-8  md:py-14">
           {/* Title */}
