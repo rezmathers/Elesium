@@ -34,10 +34,10 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       ref={menuRef}
-      className={cn("max-w-7xl z-20", className)}
+      className={cn("max-w-7xl z-20 ", className)}
     >
       <nav className="w-screen items-center justify-center z-20">
-        <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4">
+        <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4 md:px-0">
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/logo.svg" className="h-8" alt="Elesium Logo" />
             <span className="self-center text-4xl whitespace-nowrap text-white font-Cinzel tracking-widest">
@@ -45,17 +45,17 @@ function Navbar({ className }: { className?: string }) {
             </span>
           </Link>
           <div className="flex md:order-2 md:space-x-0 rtl:space-x-reverse xs:justify-between">
-            <ContactPage/>
-            {/* <button
+            <ContactPage buttonText="Book Now" className="border border-blue-700 px-4 py-2 rounded-md bg-slate-900/60"/>
+            <button
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hidden focus:outline-none dark:text-gray-400"
+              className="inline-flex items-center justify-end w-10 h-10 text-sm text-slate-400 rounded-lg md:hidden focus:outline-none dark:text-gray-400"
               aria-controls="navbar-sticky"
               aria-expanded={isMenuOpen}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="w-5 h-5"
+                className="w-6"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -69,7 +69,7 @@ function Navbar({ className }: { className?: string }) {
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
-            </button> */}
+            </button>
           </div>
           <div
             className={cn(
@@ -94,7 +94,7 @@ function Navbar({ className }: { className?: string }) {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#services"
                   className="block py-2 px-3 text-slate-400 md:p-0 hover:text-white"
                   onClick={handleLinkClick} // Close the menu on click
                 >
@@ -103,7 +103,7 @@ function Navbar({ className }: { className?: string }) {
               </li>
               <li>
                 <Link
-                  href="/caseStudy"
+                  href="#case-studies"
                   className="block py-2 px-3 text-slate-400 md:p-0 hover:text-white"
                   onClick={handleLinkClick} // Close the menu on click
                 >
@@ -112,7 +112,7 @@ function Navbar({ className }: { className?: string }) {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#testimonials"
                   className="block py-2 px-3 text-slate-400 md:p-0 hover:text-white"
                   onClick={handleLinkClick} // Close the menu on click
                 >

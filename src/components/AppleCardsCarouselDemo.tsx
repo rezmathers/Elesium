@@ -9,7 +9,7 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <section className="w-full pt-32">
+    <section className="w-full pt-32" id="case-studies">
       <h2 className="max-w-7xl  mx-auto text-3xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 cinzel-decorative-regular mb-2 md:px-0 xs:px-4">
         Case Studies
       </h2>

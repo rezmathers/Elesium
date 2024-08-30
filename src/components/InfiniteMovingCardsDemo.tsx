@@ -5,11 +5,11 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <section className="pt-32 relative">
+    <section className="pt-32 relative" id="testimonials">
       <h2 className=" text-3xl max-w-7xl font-bold md:text-5xl  cinzel-decorative-regular mx-auto text-white xs:px-4 md:px-0">
              Testimonials
           </h2>
-        <div className=" rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center  relative overflow-hidden ">
+        <div className=" rounded-md flex flex-col antialiased bg-grid-white/[0.05] items-center  relative overflow-hidden ">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

@@ -4,7 +4,7 @@ import BlurFade from './magicui/blur-fade'
 
 const Stats = () => {
   return (
-    <section id='about'className='text-slate-300 pt-32'>
+    <section id='about'className='text-slate-300 md:pt-32 xs:12'>
       {/* Container */}
       <div className="md:px-0 mx-auto w-full max-w-7xl xs:px-4">
         {/* Title */}

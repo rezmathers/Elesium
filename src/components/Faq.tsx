@@ -1,17 +1,15 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
+import { CSSTransition } from "react-transition-group";
 
 const Faq = () => {
-  // State to manage open/close of each FAQ item
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
-  // Function to toggle the visibility of FAQ details
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };
 
-  // Dummy data for FAQs
   const faqs = [
     {
       title: "What is your policy on distribution?",
@@ -68,12 +66,29 @@ const Faq = () => {
                 </div>
               </div>
               <div className="mb-6 mt-8 h-[0.5px] w-full bg-slate-300/30"></div>
-              <a
-                href="#"
-                className="inline-block items-center rounded-md bg-white/20 px-6 py-3 text-center font-semibold text-white border border-slate-200/20"
-              >
-                Get In Touch
-              </a>
+              <div className="items-center rounded-md bg-black/20 px-6 py-3 text-center font-semibold text-white border border-slate-200/20 flex md:flex-row xs:flex-col xs:gap-4 justify-between">
+             
+                  Get In Touch
+               
+                <div className="flex md:gap-3 xs:justify-between xs:w-full md:w-fit">
+                  {/* Mail Icon */}
+                  <a href="mailto:someone@example.com" target="_blank">
+                  <img src="./instagram.svg" alt="Elesuim" className='h-8'/>
+                  </a>
+                  {/* Facebook Icon */}
+                  <a href="https://facebook.com" target="_blank">
+                  <img src="./fb.svg" alt="Elesuim" className='h-8'/>
+                  </a>
+                  {/* LinkedIn Icon */}
+                  <a href="https://linkedin.com" target="_blank">
+                  <img src="./linkdin.svg" alt="Elesuim" className='h-8'/>
+                  </a>
+                  {/* Instagram Icon */}
+                  <a href="https://instagram.com" target="_blank">
+                  <img src="./gmail.svg" alt="Elesuim" className='h-8'/>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="lg:flex-[1_1_500px] w-full flex-none">
@@ -97,16 +112,43 @@ const Faq = () => {
                     <div className="h-0.5 w-5 bg-white"></div>
                   </div>
                 </div>
-                {openFAQ === index && (
-                  <div className="w-full overflow-hidden mb-4 max-w-2xl lg:max-w-4xl">
+                <CSSTransition
+                  in={openFAQ === index}
+                  timeout={300}
+                  classNames="faq-content"
+                  unmountOnExit
+                >
+                  <div className="faq-content w-full overflow-hidden mb-4 max-w-2xl lg:max-w-4xl">
                     <p className="text-sm sm:text-base">{faq.content}</p>
                   </div>
-                )}
+                </CSSTransition>
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Adding CSS for transitions */}
+      <style jsx>{`
+        .faq-content-enter {
+          max-height: 0;
+          opacity: 0;
+        }
+        .faq-content-enter-active {
+          max-height: 300px; /* or any maximum height that accommodates the content */
+          opacity: 1;
+          transition: max-height 300ms ease-in, opacity 300ms ease-in;
+        }
+        .faq-content-exit {
+          max-height: 300px;
+          opacity: 1;
+        }
+        .faq-content-exit-active {
+          max-height: 0;
+          opacity: 0;
+          transition: max-height 300ms ease-out, opacity 300ms ease-out;
+        }
+      `}</style>
     </section>
   );
 };

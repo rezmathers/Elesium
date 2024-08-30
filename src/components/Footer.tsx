@@ -2,15 +2,15 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className=' backdrop-blur-3xl  border-t border-slate-300/30 pt-4 mt-32' id='footer'>
+    <footer className=' backdrop-blur-3xl  border-t border-slate-300/30  mt-32' id='footer'>
     <div className="flex flex-col mx-auto w-full max-w-7xl  py-16 md:py-20 text-white xs:px-4">
       {/* LOGO */}
-      <img src="./logo.svg" alt="" className='h-10 w-10 lg:hidden'/>
+      <img src="./logo.svg" alt="" className='h-10 w-10'/>
       {/* MIDDLE CONTAINER */}
-      <div className="lg:mt-20 mt-10 lg:flex w-full lg:flex-row lg:justify-between">
+      <div className="mt-10 lg:flex w-full lg:flex-row lg:justify-between">
         {/* NEWSLETTER & EMAIL */}
-        <div className="flex flex-col mt-10 lg:mt-0">
-          <form action="" className="lg:mt-0 mt-14 max-w-md">
+        <div className="flex flex-col">
+          <form action="" className="lg:mt-0 max-w-md">
             <div className="relative">
               <label
                 htmlFor="email"
@@ -42,64 +42,8 @@ const Footer = () => {
             <p className="font-inter text-base">shah@elesium.online</p>
           </div>
         </div>
-        {/* FOOTER LINKS */}
-        <div className="flex lg:ml-10 relative mt-10 lg:mt-0">
-          {/* LOGO */}
-          <img src="./logo.svg" alt="Elesuim" className='lg:absolute lg:-top-28 hidden lg:block h-14'/>
-          <div className="flex grow flex-row flex-wrap lg:flex-nowrap lg:items-start lg:justify-end">
-            {/* LINK BLOCK */}
-            <div className="lg:mt-0 my-5 mr-5 flex max-w-52 grow basis-24 flex-col space-y-5">
-              <h2 className="font-inter font-medium text-slate-400">SOLUTION</h2>
-              <a href="" className="font-inter font-light text-gray-500">
-                Marketing
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Analytics
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Commerce
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Insights
-              </a>
-            </div>
-            {/* LINK BLOCK */}
-            <div className="lg:mt-0 my-5  mr-5 lg:ml-32 flex max-w-52 grow basis-24 flex-col space-y-5">
-              <h2 className="font-inter font-medium text-slate-400">SUPPORT</h2>
-              <a href="" className="font-inter font-light text-gray-500">
-                Pricing
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Documentation
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Guides
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                API Status
-              </a>
-            </div>
-            {/* LINK BLOCK */}
-            <div className="lg:mt-0 my-5 mr-5  lg:ml-32 flex max-w-52 grow basis-24 flex-col space-y-5">
-              <h2 className="font-inter font-medium text-slate-400">COMPANY</h2>
-              <a href="" className="font-inter font-light text-gray-500">
-                About
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Blog
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Jobs
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Press
-              </a>
-              <a href="" className="font-inter font-light text-gray-500">
-                Partners
-              </a>
-            </div>
-          </div>
-        </div>
+       
+        
       </div>
       {/* DIVIDER */}
       <div className="mx-auto my-12 w-full border border-gray-300 lg:my-20"></div>
@@ -142,28 +86,14 @@ const Footer = () => {
           >
             <svg
               className="fill-current"
-              width="25"
-              height="25"
+              width="23"
+              height="23"
               viewBox="0 0 25 25"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M21.5952 12.4998C22.1776 11.988 22.5489 11.2779 22.6367 10.5076C22.7245 9.73723 22.5226 8.96177 22.0703 8.33205C21.618 7.70233 20.9476 7.2634 20.1895 7.10064C19.4315 6.93788 18.64 7.06293 17.969 7.45147V5.46854C17.9694 4.83357 17.7763 4.21356 17.4153 3.69117C17.0544 3.16878 16.5427 2.76884 15.9486 2.54466C15.3546 2.32048 14.7063 2.28271 14.0902 2.4364C13.4741 2.59009 12.9195 2.92793 12.5003 3.40487C11.9885 2.82243 11.2784 2.45118 10.5081 2.36336C9.73772 2.27555 8.96225 2.47744 8.33253 2.92976C7.70282 3.38208 7.26388 4.05249 7.10112 4.81054C6.93836 5.5686 7.06342 6.36009 7.45197 7.03104H5.46904C4.83406 7.03063 4.21405 7.22379 3.69166 7.58476C3.16927 7.94573 2.76933 8.45736 2.54515 9.05144C2.32097 9.64552 2.28321 10.2938 2.4369 10.9099C2.59059 11.526 2.92843 12.0806 3.40538 12.4998C2.82293 13.0115 2.45168 13.7217 2.36386 14.492C2.27603 15.2624 2.47792 16.0378 2.93024 16.6676C3.38257 17.2973 4.05297 17.7362 4.81103 17.899C5.56909 18.0617 6.36059 17.9367 7.03154 17.5481V19.531C7.03113 20.166 7.22428 20.786 7.58525 21.3084C7.94622 21.8308 8.45785 22.2307 9.05193 22.4549C9.64602 22.6791 10.2943 22.7169 10.9104 22.5632C11.5265 22.4095 12.0811 22.0717 12.5003 21.5947C13.012 22.1772 13.7222 22.5484 14.4925 22.6362C15.2629 22.724 16.0383 22.5221 16.668 22.0698C17.2978 21.6175 17.7367 20.9471 17.8995 20.189C18.0622 19.431 17.9372 18.6395 17.5486 17.9685H19.5315C20.1665 17.969 20.7865 17.7758 21.3089 17.4148C21.8313 17.0539 22.2312 16.5422 22.4554 15.9481C22.6796 15.3541 22.7174 14.7058 22.5637 14.0897C22.41 13.4736 22.0721 12.919 21.5952 12.4998ZM8.59404 5.46854C8.59404 5.05414 8.75866 4.65671 9.05168 4.36369C9.34471 4.07066 9.74214 3.90604 10.1565 3.90604C10.5709 3.90604 10.9684 4.07066 11.2614 4.36369C11.5544 4.65671 11.719 5.05414 11.719 5.46854V7.03104H10.1565C9.74228 7.03057 9.34513 6.8658 9.05221 6.57287C8.75928 6.27995 8.59451 5.8828 8.59404 5.46854ZM3.90654 10.156C3.90701 9.74179 4.07178 9.34463 4.36471 9.05171C4.65763 8.75879 5.05478 8.59402 5.46904 8.59354H10.1565C10.5708 8.59402 10.9679 8.75879 11.2609 9.05171C11.5538 9.34463 11.7186 9.74179 11.719 10.156V11.7185H5.46904C5.05478 11.7181 4.65763 11.5533 4.36471 11.2604C4.07178 10.9675 3.90701 10.5703 3.90654 10.156ZM16.4065 19.531C16.4065 19.9454 16.2419 20.3429 15.9489 20.6359C15.6559 20.9289 15.2584 21.0935 14.844 21.0935C14.4296 21.0935 14.0322 20.9289 13.7392 20.6359C13.4462 20.3429 13.2815 19.9454 13.2815 19.531V17.9685H14.844C15.2583 17.969 15.6554 18.1338 15.9484 18.4267C16.2413 18.7196 16.4061 19.1168 16.4065 19.531ZM19.5315 16.406H14.844C14.4298 16.4056 14.0326 16.2408 13.7397 15.9479C13.4468 15.655 13.282 15.2578 13.2815 14.8435V13.281H19.5315C19.9459 13.281 20.3434 13.4457 20.6364 13.7387C20.9294 14.0317 21.094 14.4291 21.094 14.8435C21.094 15.2579 20.9294 15.6554 20.6364 15.9484C20.3434 16.2414 19.9459 16.406 19.5315 16.406Z"></path>
-            </svg>
+              <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533c2.987,0,3.539,1.966,3.539,4.522V22z"></path></svg>
           </a>
-          <a
-            href=""
-            className="mx-4 text-slate-400 transition hover:text-gray-400"
-          >
-            <svg
-              className="fill-current"
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M23.9883 7.58391L21.0426 10.5297C20.4545 17.354 14.6994 22.6565 7.81089 22.6565C6.39249 22.6565 5.22357 22.4316 4.33651 21.9881C3.62063 21.6301 3.32738 21.246 3.25461 21.1367C3.18933 21.0388 3.14702 20.9274 3.13083 20.8108C3.11464 20.6943 3.12499 20.5755 3.16112 20.4635C3.19724 20.3515 3.2582 20.2491 3.33945 20.164C3.42069 20.0789 3.52012 20.0132 3.63031 19.9718C3.65544 19.9624 5.95923 19.0775 7.44821 17.3929C6.52206 16.7334 5.70694 15.9305 5.0335 15.0145C3.69483 13.1977 2.27901 10.0427 3.13598 5.32923C3.16148 5.18895 3.22489 5.05833 3.31932 4.95152C3.41376 4.8447 3.53562 4.76577 3.67171 4.72326C3.8078 4.68075 3.95293 4.67629 4.09137 4.71037C4.22981 4.74445 4.35629 4.81575 4.4571 4.91657C4.49153 4.9509 7.74246 8.15592 11.7166 9.19118L11.7171 8.59361C11.7256 7.34276 12.2303 6.14644 13.1204 5.26759C14.0105 4.38874 15.2132 3.89929 16.4641 3.90682C17.2766 3.91808 18.0724 4.1399 18.7737 4.55063C19.4749 4.96136 20.0576 5.54694 20.4649 6.25019L23.4359 6.25024C23.5904 6.25024 23.7414 6.29606 23.8699 6.3819C23.9984 6.46774 24.0985 6.58975 24.1577 6.73251C24.2168 6.87526 24.2323 7.03234 24.2021 7.18389C24.172 7.33543 24.0976 7.47464 23.9883 7.58391Z"></path>
-            </svg>
-          </a>
+          
         </div>
         <p className="font-inter lg:mt-0 text-sm text-gray-500">
           © Copyright 2021. All rights reserved.

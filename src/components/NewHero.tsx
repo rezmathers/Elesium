@@ -20,22 +20,22 @@ const NewHero = () => {
           <div className="flex items-stretch  pt-12 ">
             <a
               href="#about"
-              className="mr-6 rounded-md bg-black/30 px-8 py-4 text-center font-semibold text-white lg:mr-8 border border-slate-50/50"
+              className="mr-6 rounded-md bg-white/10 px-8 py-4 text-center font-semibold text-white lg:mr-8 "
             >
               Get Started
             </a>
-            <ContactPage/>
+            <ContactPage className='rounded-md px-8 py-4 bg-blue-700/20 border border-slate-50/30' buttonText='Contact Now'/>
           </div>
         </div>
       </div>
       {/* Hero bottom */}
-      <div className="mx-auto max-w-7xl px-5 py-6">
+      <div className="mx-auto max-w-7xl xs:px-4 md:px-0 py-6">
         {/* Component */}
         <div className="relative flex max-w-7xl flex-col gap-4 lg:flex-row lg:justify-end">
           {/* Arrow down */}
           <div className="max-w-xl lg:mr-[520px] lg:max-w-xs">
             {/* Title */}
-            <h3 className="text-3xl font-bold md:text-4xl text-slate-600 font-Cinzel">We are</h3>
+            <h3 className="text-3xl font-bold md:text-4xl text-slate-300 font-Cinzel italic">We are</h3>
             {/* Divider */}
             <div className="my-4 w-28 border-t border-white"></div>
             <p className="text-lg text-gray-500 ">
