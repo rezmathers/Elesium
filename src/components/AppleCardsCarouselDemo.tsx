@@ -2,6 +2,10 @@
 
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Legend, ResponsiveContainer, Tooltip } from "recharts";
+import '../components/graphdata/graph1'
+import Graph1 from "../components/graphdata/graph1";
+
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -13,34 +17,18 @@ export function AppleCardsCarouselDemo() {
       <h2 className="max-w-7xl  mx-auto text-3xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 cinzel-decorative-regular mb-2 md:px-0 xs:px-4">
         Case Studies
       </h2>
-      <Carousel items={cards}/>
+      <Carousel items={cards} />
     </section>
   );
 }
 
 const DummyContent = () => {
   return (
-    <>
-      
-        
-          <div
-            
-            className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            
-          </div>
-        
-      
-    </>
+    <div className="h-72">
+<Graph1/>  
+    </div>
+    
+    
   );
 };
 
