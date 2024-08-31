@@ -72,7 +72,7 @@ const Faq = () => {
                
                 <div className="flex md:gap-3 xs:justify-between xs:w-full md:w-fit">
                   {/* Mail Icon */}
-                  <a href="mailto:someone@example.com" target="_blank">
+                  <a href="https://ig.me/m/elesium__" target="_blank">
                   <img src="./instagram.svg" alt="Elesuim" className='h-8'/>
                   </a>
                   {/* Facebook Icon */}
@@ -84,7 +84,7 @@ const Faq = () => {
                   <img src="./linkdin.svg" alt="Elesuim" className='h-8'/>
                   </a>
                   {/* Instagram Icon */}
-                  <a href="https://instagram.com" target="_blank">
+                  <a href="mailto:shah@elesium.com" target="_blank">
                   <img src="./gmail.svg" alt="Elesuim" className='h-8'/>
                   </a>
                 </div>

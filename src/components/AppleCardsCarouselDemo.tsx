@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Legend, ResponsiveContainer, Tooltip } from "recharts";
+
 import '../components/graphdata/graph1'
 import Graph1 from "../components/graphdata/graph1";
 
