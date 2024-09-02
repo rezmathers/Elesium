@@ -155,7 +155,7 @@ export default class Graph1 extends PureComponent {
             <br />
             <br />
             It made perfect sense for our team to gain control of every aspect
-            of the brand's marketing… Facebook ads, Google ads, TikTok ads,
+            of the brand&#39;s marketing… Facebook ads, Google ads, TikTok ads,
             e-mail marketing, ad graphics creation, ad video scripting and
             landing page builds.
             <br />
@@ -224,7 +224,7 @@ export default class Graph1 extends PureComponent {
             <br />
             This level of attention and proactivity is required for brands
             hoping to achieve respectable numbers. We call these marketing
-            campaigns and events ‘revenue squeezes’ and they were achieving
+            campaigns and events &#39;revenue squeezes&#39; and they were achieving
             close to $20k per day for each campaign.
           </p>
           <hr className="my-4 border border-slate-300/30" />
@@ -233,7 +233,7 @@ export default class Graph1 extends PureComponent {
           </h2>
           <p className="text-xl ml-4 text-slate-400">
             Above everything, a focus on new creatives and angles was the main
-            driver behind this brand's success. Developing a successful creative
+            driver behind this brand&#39;s success. Developing a successful creative
             format was essential for us to understand where we could double down
             our marketing dollars. A successful creative format can be iterated
             on, over and over again.
