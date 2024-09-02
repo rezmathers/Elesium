@@ -198,12 +198,12 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 h-screen z-50 overflow-auto flex items-center justify-center">
+          <div className="fixed inset-0 h-screen z-50 overflow-auto flex">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="bg-black/20 backdrop-blur-3xl h-screen w-full fixed flex items-center justify-center"
+              className=" backdrop-blur-3xl h-full w-full fixed"
             />
             <motion.div
               initial={{ opacity: 0 }}
@@ -211,27 +211,28 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl mx-auto  dark:bg-neutral-900 h-fit  z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
+              className="max-w-5xl w-full bg-slate-900/70 z-[60] p-4 rounded-3xl relative  overflow-auto hide-scrollbar  border border-slate-300/30 flex flex-col md:mx-auto my-6 xs:mx-4"
+
             >
               <button
-                className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
+                className="relative  h-8 w-8 self-end bg-black dark:bg-white rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
-                className="text-base font-medium text-black dark:text-white"
+                className=" font-medium text-white"
               >
                 {card.category}
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
+                className="text-2xl md:text-5xl font-semibold text-white"
               >
                 {card.title}
               </motion.p>
-              <div className="py-10">{card.content}</div>
+              <div className="py-4">{card.content}</div>
             </motion.div>
           </div>
         )}

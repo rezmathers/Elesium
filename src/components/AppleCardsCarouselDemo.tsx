@@ -25,7 +25,8 @@ export function AppleCardsCarouselDemo() {
 const DummyContent = () => {
   return (
     <div className="h-72">
-<Graph1/>  
+    <Graph1/>  
+    
     </div>
     
     

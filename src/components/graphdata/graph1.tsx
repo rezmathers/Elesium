@@ -4,8 +4,8 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const data = [
   {
     name: 'Page A',
-    uv: 4000,
-    pv: 2400,
+    uv: 0,
+    pv: 0,
     amt: 2400,
   },
   {
@@ -17,7 +17,7 @@ const data = [
   {
     name: 'Page C',
     uv: 2000,
-    pv: 9800,
+    pv: 4800,
     amt: 2290,
   },
   {
@@ -51,27 +51,28 @@ export default class Graph1 extends PureComponent {
 
   render() {
     return (
+      <div className='w-full bg-slate-700/30 p-4 h-full rounded-2xl border border-slate-400/40'>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
-          width={500}
-          height={300}
           data={data}
           margin={{
             top: 5,
             right: 30,
-            left: 20,
+            left: 0,
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          
+          <XAxis />
+          <YAxis/>
           <Tooltip />
-          <Legend />
+          
           <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
+      </div>
+      
     );
   }
 }
