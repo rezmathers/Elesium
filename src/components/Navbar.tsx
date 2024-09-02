@@ -32,42 +32,45 @@ function Navbar({ className }: { className?: string }) {
   };
 
   return (
-    <div
-      ref={menuRef}
-      className={cn("max-w-7xl z-20 ", className)}
-    >
+    <div ref={menuRef} className={cn("max-w-7xl z-20 ", className)}>
       <nav className="w-screen items-center justify-center z-20 ">
-        <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4 md:px-0">
-          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4 xs:pr-0 md:px-0">
+          <Link
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <img src="/logo.svg" className="h-8" alt="Elesium Logo" />
-            <span className="self-center text-4xl whitespace-nowrap text-white font-Cinzel tracking-widest">
+            <span className="self-center md:text-4xl xs:text-2xl whitespace-nowrap text-white font-Cinzel tracking-widest">
               Elesium
             </span>
           </Link>
           <div className="flex md:order-2 md:space-x-0 rtl:space-x-reverse xs:justify-between">
-            <ContactPage buttonText="Book Now" className="border border-blue-700 px-4 py-2 rounded-md bg-slate-900/60"/>
+            <ContactPage
+              buttonText="Book Now"
+              className="border border-blue-700 px-4 py-2 rounded-md bg-slate-900/60"
+            />
             <button
               type="button"
-              className="inline-flex items-center justify-end w-10 h-10 text-sm text-slate-400 rounded-lg md:hidden focus:outline-none dark:text-gray-400"
+              className="inline-flex  w-fit h-10 text-sm text-slate-400 rounded-lg md:hidden focus:outline-none dark:text-gray-400 items-center"
               aria-controls="navbar-sticky"
               aria-expanded={isMenuOpen}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="w-6"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
                 fill="none"
-                viewBox="0 0 17 14"
+                width={25}
+                height={25}
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
+                <circle cx="12" cy="12" r="1" />
+                <circle cx="12" cy="5" r="1" />
+                <circle cx="12" cy="19" r="1" />
               </svg>
             </button>
           </div>
@@ -123,6 +126,7 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </div>
       </nav>
+      <hr className="xs:block md:hidden w-full border border-x-slate-400/30" />
     </div>
   );
 }
