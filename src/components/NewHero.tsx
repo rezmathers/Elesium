@@ -8,23 +8,23 @@ const NewHero = () => {
   return (
     <header className='h-fit z-10'>
       {/* Hero top */}
-      <div className="z-30 border-b border-slate-200/30 xs:px-4 pb-8 ">
+      <div className="z-30 border-b border-slate-200/30 xs:px-4 ">
         {/* Container */}
         <div className="mx-auto max-w-7xl py-8  md:py-14">
           {/* Title */}
           <FlipWordsDemo/>
-          <span className="cinzel-decorative-regular mt-6 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-slate-700 to-gray-300 bg-clip-text text-center text-6xl leading-none text-transparent dark:from-white dark:to-slate-900/10 xs:text-left xs:text-5xl font-bold sm:text-7xl">
+          <span className="cinzel-decorative-regular bg-gradient-to-b bg-clip-text text-transparent from-white to-slate-900/10 xs:text-4xl font-bold md:text-7xl">
         Elesium Online
       </span>
           {/* Buttons */}
-          <div className="flex items-stretch  pt-12 ">
+          <div className="flex items-stretch pt-4 ">
             <a
               href="#about"
-              className="mr-6 rounded-md bg-white/10 px-8 py-4 text-center font-semibold text-white lg:mr-8 "
+              className="mr-6 rounded-md bg-white/10 xs:px-4 md:px-8 py-4 text-center font-semibold text-white lg:mr-8 "
             >
               Get Started
             </a>
-            <ContactPage className='rounded-md px-8 py-4 bg-blue-700/20 border border-slate-50/30' buttonText='Contact Now'/>
+            <ContactPage className='rounded-md xs:px-4 md:px-8 py-4 bg-slate-700/30 border border-slate-50/30' buttonText='Contact Now'/>
           </div>
         </div>
       </div>

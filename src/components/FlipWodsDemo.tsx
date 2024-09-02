@@ -6,7 +6,7 @@ export function FlipWordsDemo() {
 
   return (
     <div className="m-0">
-      <div className="xs:text-3xl sm:text-6xl bg-gradient-to-b from-white via-black to-white bg-clip-text text-transparent cinzel-decorative-regular">
+      <div className="xs:text-3xl md:text-5xl bg-gradient-to-b from-white via-black to-white bg-clip-text text-transparent cinzel-decorative-regular mb-3">
         Elevate Your<br/>
         <FlipWords words={words} className="font-bold p-0 py-2"/><br />
         Business Effortlessly with
