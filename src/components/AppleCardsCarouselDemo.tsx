@@ -5,6 +5,7 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 import '../components/graphdata/graph1'
 import Graph1 from "../components/graphdata/graph1";
+import Graph2 from "./graphdata/graph2";
 
 
 export function AppleCardsCarouselDemo() {
@@ -24,8 +25,8 @@ export function AppleCardsCarouselDemo() {
 
 const DummyContent = () => {
   return (
-    <div className="h-96">
-<Graph1/>  
+    <div className="h-96 w-full bg-red-500 flex items-center justify-center">
+      yaoooooooo
     </div>
        
   );
@@ -33,8 +34,8 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
+    category: "Paid Ads, Email Marketing",
+    title: "0 to 18 lakhs in 12 months",
     src: "https://live.staticflickr.com/65535/49389103952_ff4b2cf256.jpg",
     content: <Graph1/>,
   },
@@ -42,7 +43,7 @@ const data = [
     category: "Productivity",
     title: "Enhance your productivity.",
     src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    content: <Graph2/>,
   },
   {
     category: "Product",

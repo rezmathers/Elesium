@@ -9,7 +9,6 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import Image from "next/image";
 import ContactPage from "../ContactPage";
 
 const data = [
@@ -80,7 +79,7 @@ export default class Graph1 extends PureComponent {
         </ResponsiveContainer>
 
         <div className="mt-8  h-fit w-full rounded-2xl">
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             The Challenge
           </h2>
           <ul className="text-xl list-disc pl-10 text-slate-400">
@@ -89,7 +88,7 @@ export default class Graph1 extends PureComponent {
             <li>Increasing customer lifetime value</li>
           </ul>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             The Result
           </h2>
           <ul className="text-xl list-disc pl-10 text-slate-400">
@@ -97,15 +96,15 @@ export default class Graph1 extends PureComponent {
             <li>Increased profitability</li>
             <li>Systemised marketing funnel for long term growth</li>
           </ul>
-          <hr className="my-4 border border-slate-300/30" />
-          <div className="h-fit bg-red-300 w-fit rounded-xl object-cover overflow-hidden">
+          
+          <div className="h-fit bg-red-300 w-2/3 rounded-xl object-cover overflow-hidden mt-4 pointer-events-none">
             <img
-              src="https://images.pexels.com/photos/3887985/pexels-photo-3887985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://cdn.prod.website-files.com/62ce930274c3a44b8bcd0138/62ce930274c3a45d53cd0147_casestudy-1-thumbnail.jpg"
               alt="."
             />
           </div>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             What You Will Learn From This Case Study
           </h2>
           <ul className="text-xl custom-list pl-10 text-slate-400">
@@ -125,7 +124,7 @@ export default class Graph1 extends PureComponent {
             </li>
           </ul>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             Introduction
           </h2>
           <p className="text-xl ml-4 text-slate-400">
@@ -145,7 +144,7 @@ export default class Graph1 extends PureComponent {
             serious progress to be made.
           </p>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             Planning
           </h2>
           <p className="text-xl ml-4 text-slate-400">
@@ -167,7 +166,7 @@ export default class Graph1 extends PureComponent {
             combined and budget is allocated correctly.
           </p>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             Tracking
           </h2>
           <p className="text-xl ml-4 text-slate-400">
@@ -187,7 +186,7 @@ export default class Graph1 extends PureComponent {
             for double attribution across multiple platforms.
           </p>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             Leverage
           </h2>
           <p className="text-xl ml-4 text-slate-400">
@@ -208,7 +207,7 @@ export default class Graph1 extends PureComponent {
             of days.
           </p>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             Scarcity
           </h2>
           <p className="text-xl ml-4 text-slate-400">
@@ -228,7 +227,7 @@ export default class Graph1 extends PureComponent {
             close to $20k per day for each campaign.
           </p>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             Creatives
           </h2>
           <p className="text-xl ml-4 text-slate-400">
@@ -249,7 +248,7 @@ export default class Graph1 extends PureComponent {
             our ad ROAS.
           </p>
           <hr className="my-4 border border-slate-300/30" />
-          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             Conclusion
           </h2>
           <p className="text-xl ml-4 text-slate-400">
@@ -267,6 +266,7 @@ export default class Graph1 extends PureComponent {
             creative strategy and platform led us to increase this brand&#39;s
             revenue and overall profitability of the business.
           </p>
+          <hr className="my-4 border border-slate-300/30" />
           <ContactPage buttonText="Apply Now" className="mt-4 h-fit w-fit p-4 bg-slate-700/40 border border-slate-300/30 rounded-lg" />
           <div className="h-60" id="bottom"></div>
         </div>
