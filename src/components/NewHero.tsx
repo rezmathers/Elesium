@@ -17,7 +17,7 @@ const NewHero = () => {
         Elesium Online
       </span>
           {/* Buttons */}
-          <div className="flex items-stretch pt-4 ">
+          <div className="flex items-stretch md:pt-9 xs:pt-4">
             <a
               href="#about"
               className="mr-6 rounded-md bg-white/10 xs:px-4 md:px-8 py-4 text-center font-semibold text-white lg:mr-8 "

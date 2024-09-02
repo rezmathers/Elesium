@@ -36,7 +36,7 @@ const data = [
     category: "Artificial Intelligence",
     title: "You can do more with AI.",
     src: "https://live.staticflickr.com/65535/49389103952_ff4b2cf256.jpg",
-    content: <DummyContent />,
+    content: <Graph1/>,
   },
   {
     category: "Productivity",

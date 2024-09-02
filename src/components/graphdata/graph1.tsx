@@ -30,7 +30,7 @@ const data = [
 export default class Graph1 extends PureComponent {
   render() {
     return (
-      <div className="sm:w-full md:w-3/4 bg-slate-950/30 p-4 h-full rounded-2xl pl-0  mx-auto">
+      <div className="sm:w-full md:w-3/4 bg-slate-950/30 p-4 h-96 rounded-2xl pl-0  mx-auto">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
