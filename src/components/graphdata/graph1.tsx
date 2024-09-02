@@ -264,7 +264,7 @@ export default class Graph1 extends PureComponent {
             <br />
             Brands need to be conscious of upcoming marketing opportunities as
             the landscape for DTC changes so frequently. A small shift in
-            creative strategy and platform led us to increase this brand's
+            creative strategy and platform led us to increase this brand&#39;s
             revenue and overall profitability of the business.
           </p>
           <ContactPage buttonText="Apply Now" className="mt-4 h-fit w-fit p-4 bg-slate-700/40 border border-slate-300/30 rounded-lg" />
