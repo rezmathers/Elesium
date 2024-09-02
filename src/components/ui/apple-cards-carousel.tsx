@@ -215,7 +215,7 @@ export const Card = ({
 
             >
               <button
-                className="relative  h-8 w-8 self-end bg-black dark:bg-white rounded-full flex items-center justify-center"
+                className=" h-8 w-8 self-end bg-white rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
@@ -226,9 +226,10 @@ export const Card = ({
               >
                 {card.category}
               </motion.p>
+              <hr className="my-4 border-slate-200/40"/>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-white"
+                className="text-2xl md:text-5xl  text-white mb-4 text-center"
               >
                 {card.title}
               </motion.p>

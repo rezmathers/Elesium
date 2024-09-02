@@ -24,12 +24,10 @@ export function AppleCardsCarouselDemo() {
 
 const DummyContent = () => {
   return (
-    <div className="h-72">
-    <Graph1/>  
-    
+    <div className="h-96">
+<Graph1/>  
     </div>
-    
-    
+       
   );
 };
 

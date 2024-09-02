@@ -8,10 +8,11 @@ import Stats from "@/components/Stats";
 import Faq from "@/components/Faq";
 import NewHero from "@/components/NewHero";
 import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarouselDemo";
+import { HeroVideoDialogDemoTopInBottomOut } from "@/components/HeroVideoDialogDemoTopInBottomOut";
 
 export default function Home() {
   return (
-    <main className="dark gap-14">
+    <main className="dark">
       <AuroraBackgroundDemo />
       <NavbarDemo />
       <NewHero />
@@ -19,6 +20,7 @@ export default function Home() {
       {/* <FeatureSectionDemo/> */}
       {/* <Clients/> */}
       <BentoGridDemo />
+      <HeroVideoDialogDemoTopInBottomOut/>
       <AppleCardsCarouselDemo />
       <InfiniteMovingCardsDemo />
       <Faq />

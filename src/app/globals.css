@@ -49,6 +49,25 @@ body::-webkit-scrollbar {
   scrollbar-width: none;  /* Firefox */
 }
 
+.custom-list {
+  list-style-type: none; /* Remove default list bullets */
+  padding-left: 1.5rem; /* Adjust padding for custom bullet positioning */
+}
+
+.custom-list li {
+  position: relative; /* Position relative for absolute positioning of the tick marks */
+  padding-left: 2rem; /* Space for the custom tick mark */
+}
+
+.custom-list li::before {
+  content: '✔'; /* Unicode for tick mark */
+  position: absolute;
+  left: 0; /* Position it at the start of the list item */
+  color: green; /* Customize the color of the tick mark */
+  font-size: 1.5rem; /* Adjust size of the tick mark */
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
