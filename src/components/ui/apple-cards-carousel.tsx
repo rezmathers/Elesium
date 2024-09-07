@@ -24,7 +24,7 @@ interface CarouselProps {
 type Card = {
   src: string;
   title: string;
-  category: string;
+  category: string[];
   content: React.ReactNode;
 };
 
@@ -203,33 +203,33 @@ export const Card = ({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className=" backdrop-blur-3xl h-full w-full fixed"
-            />
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl  w-full bg-slate-900/70 z-[60] p-4 rounded-3xl relative  overflow-auto hide-scrollbar  border border-slate-300/30 flex flex-col md:mx-auto my-6 xs:mx-4"
-
+              className="max-w-5xl  w-full bg-slate-900/70 z-[60] p-4 rounded-3xl relative overflow-auto hide-scrollbar border border-slate-300/30 flex flex-col md:mx-auto my-6 xs:mx-4"
             >
               <button
-                className=" h-8 w-8 self-end bg-white rounded-full flex items-center justify-center"
+                className="h-8 w-8 self-end bg-white rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
-              <motion.p
-                layoutId={layout ? `category-${card.title}` : undefined}
-                className=" font-medium text-white"
-              >
-                {card.category}
-              </motion.p>
-              <hr className="my-4 border-slate-200/40"/>
+              <motion.div
+  layoutId={layout ? `category-${card.title}` : undefined}
+  className="font-medium text-white flex flex-wrap gap-2"
+>
+  {card.category.map((category, index) => (
+    <div
+      key={index}
+      className="border border-blue-500 rounded-full px-3 py-1"
+    >
+      {category}
+    </div>
+  ))}
+</motion.div>
+              <hr className="my-4 border-slate-200/40" />
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl  text-white mb-4 text-center"
+                className="text-2xl md:text-5xl text-white mb-4 text-center"
               >
                 {card.title}
               </motion.p>
@@ -247,13 +247,15 @@ export const Card = ({
         <div className="relative z-40 p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-white text-sm md:text-base font-medium font-sans text-left"
+            className="text-blue-500 text-sm md:text-base font-medium font-sans text-left "
           >
-            {card.category}
+            <div className="border border-blue-500 w-fit rounded-full px-3">
+              {card.category}
+            </div>
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 "
           >
             {card.title}
           </motion.p>
@@ -283,7 +285,7 @@ export const BlurImage = ({
       className={cn(
         "transition duration-300",
         isLoading ? "blur-sm" : "blur-0",
-        className 
+        className
       )}
       onLoad={() => setLoading(false)}
       src={src}
