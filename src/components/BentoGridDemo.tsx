@@ -14,8 +14,8 @@ import BlurFade from "./magicui/blur-fade";
 
 export function BentoGridDemo() {
   return (
-    <section className=" items-center justify-center xs:mx-4 h-fit pt-32" id="services">
-      <h2 className=" text-3xl max-w-7xl font-bold md:text-5xl  cinzel-decorative-regular mx-auto text-white">
+    <section className=" items-center justify-center xs:mx-4 h-fit " id="services">
+      <h2 className=" text-3xl max-w-7xl font-bold md:text-5xl  cinzel-decorative-regular mx-auto text-center text-white">
              Services
           </h2>
           <BlurFade>

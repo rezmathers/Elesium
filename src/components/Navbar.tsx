@@ -32,8 +32,8 @@ function Navbar({ className }: { className?: string }) {
   };
 
   return (
-    <div ref={menuRef} className={cn("max-w-7xl z-20 ", className)}>
-      <nav className="w-screen items-center justify-center z-20 ">
+    <div ref={menuRef} className={cn("max-w-7xl", className)}>
+      <nav className="w-screen items-center justify-center z-20 py-3 border-b border-slate-400/40">
         <div className="max-w-7xl w-screen flex flex-wrap items-center justify-between mx-auto py-2 xs:px-4 xs:pr-0 md:px-0">
           <Link
             href="/"
@@ -126,7 +126,7 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </div>
       </nav>
-      <hr className="xs:block md:hidden w-full border border-x-slate-400/30" />
+      
     </div>
   );
 }

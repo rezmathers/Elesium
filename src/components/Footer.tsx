@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className=' backdrop-blur-3xl  border-t border-slate-300/30  mt-32' id='footer'>
+    <footer className=' backdrop-blur-3xl  border-t border-slate-300/30 ' id='footer'>
     <div className="flex flex-col mx-auto w-full max-w-7xl  py-16 md:py-20 text-white xs:px-4">
       {/* LOGO */}
       <img src="./logo.svg" alt="" className='h-10 w-10'/>

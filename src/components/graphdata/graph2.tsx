@@ -219,7 +219,7 @@ export default class Graph1 extends PureComponent {
             gambling. Tiny iterations on a proven angle will give ad accounts
             new life and allow even further success.
           </p>
-          <hr className="my-4 border border-slate-300/30" />
+          
           
           <div className="h-60" id="bottom"></div>
         </div>

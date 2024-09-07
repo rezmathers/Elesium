@@ -266,7 +266,7 @@ export default class Graph1 extends PureComponent {
             creative strategy and platform led us to increase this brand&#39;s
             revenue and overall profitability of the business.
           </p>
-          <hr className="my-4 border border-slate-300/30" />
+          
          
           <div className="h-60" id="bottom"></div>
         </div>

@@ -3,8 +3,8 @@ import ContactPage from "./ContactPage";
 
 export function HeroVideoDialogDemoTopInBottomOut() {
   return (
-    <div className="relative max-w-7xl md:mx-auto xs:mx-4 pt-32 ">
-         <h2 className=" text-3xl font-bold md:text-5xl  cinzel-decorative-regular  text-white mb-4">
+    <div className="relative max-w-7xl md:mx-auto xs:mx-4 ">
+         <h2 className=" text-3xl font-bold md:text-5xl  cinzel-decorative-regular  text-white mb-4 text-center">
              How We Scale Brands To 7-Figure A Month
           </h2>
       <HeroVideoDialog
@@ -21,7 +21,7 @@ export function HeroVideoDialogDemoTopInBottomOut() {
         thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
         thumbnailAlt="Hero Video"
       />
-    <div className="flex justify-end w-full mt-4">
+    <div className="flex justify-center w-full mt-4">
         <ContactPage
           className="relative border border-slate-300/30 bg-slate-400/30 rounded-lg p-4 h-fit w-fit"
           buttonText="Learn More"

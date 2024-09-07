@@ -34,7 +34,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="text-white pt-32">
+    <section className="text-white">
       <div className="mx-auto w-full max-w-7xl xs:px-4">
         <div className="flex flex-col items-start lg:flex-row lg:space-x-20">
           <div className="lg:flex-[1_1_500px] w-full flex-none">
