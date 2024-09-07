@@ -267,7 +267,7 @@ export default class Graph1 extends PureComponent {
             revenue and overall profitability of the business.
           </p>
           <hr className="my-4 border border-slate-300/30" />
-          <ContactPage buttonText="Apply Now" className="mt-4 h-fit w-fit p-4 bg-slate-700/40 border border-slate-300/30 rounded-lg" />
+         
           <div className="h-60" id="bottom"></div>
         </div>
       </div>

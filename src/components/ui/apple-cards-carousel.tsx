@@ -258,6 +258,7 @@ export const Card = ({
                   </div>
                 ))}
               </motion.div>
+              <hr className=" border-slate-50 mt-4 w-full"/>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
             className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 "
