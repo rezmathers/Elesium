@@ -104,33 +104,9 @@ body::-webkit-scrollbar {
   font-style: italic;
   letter-spacing: 8px;
   text-shadow: 
-        0.5px 0.5px 0px #000,  /* Bottom Right */
-        -0.5px -0.5px 0px #fff, /* Top Left */
-        -0.5px 0.5px 0px #fff,  /* Bottom Left */
-        0.5px -0.5px 0px #fff;  /* Top Right */
+        0.5px 0.5px 0px #000,  
+        -0.5px -0.5px 0px #fff, 
+        -0.5px 0.5px 0px #fff,  
+        0.5px -0.5px 0px #fff;  
 }
 
-
-/* Contact Page Styles */
-
-.fixed.left-0.top-0.z-100.w-screen.h-screen.flex.justify-center.items-center.backdrop-blur-3xl.bg-black/50.xs:p-4 {
-  width: 100%; /* Ensure full width for all screens initially */
-}
-
-/* Responsive Width for Modal */
-
-@media (min-width: 768px) {
-  .fixed.left-0.top-0.z-100.w-screen.h-screen.flex.justify-center.items-center.backdrop-blur-3xl.bg-black/50.xs:p-4 {
-    width: 80%; /* Adjust width for larger screens */
-  }
-}
-
-/* Responsive Width for InlineWidget */
-
-#hs-modal-upgrade-to-pro .border.border-gray-200.rounded-xl.shadow-sm.dark:bg-neutral-300.backdrop-blur-2xl.h-fit.xs:fit.overflow-hidden {
-  width: 80%; /* Set a base responsive width for the InlineWidget */
-
-  @media (max-width: 768px) {
-    width: 100%; /* Adjust width for smaller screens */
-  }
-}
