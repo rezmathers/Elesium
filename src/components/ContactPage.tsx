@@ -254,7 +254,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ className, buttonText = "Cont
       {isModalOpen && (
         <div
                   id="hs-modal-upgrade-to-pro"
-                 className="fixed left-0 top-0 z-[100] w-screen h-screen flex justify-center items-center backdrop-blur-3xl bg-black/50 xs:p-4"
+                 className="fixed left-0 top-0 z-[800] w-screen h-screen flex justify-center items-center backdrop-blur-3xl bg-slate-700/20 xs:p-4"
                   role="dialog"
                   tabIndex={-1}
                   aria-labelledby="hs-modal-upgrade-to-pro-label"
