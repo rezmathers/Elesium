@@ -16,19 +16,19 @@ export default function Home() {
       <AuroraBackgroundDemo />
       <NavbarDemo />
       <NewHero />
-      <hr className="w-full border-slate-400/40 my-32" />
+      <hr className="w-full border-slate-400/40 my-8" />
       <Stats />
-      <hr className="w-full border-slate-400/40 my-32" />
+      <hr className="w-full border-slate-400/40 my-8" />
       {/* <FeatureSectionDemo/> */}
       {/* <Clients/> */}
       <BentoGridDemo />
-      <hr className="w-full border-slate-400/40 my-32" />
+      <hr className="w-full border-slate-400/40 my-8" />
       <HeroVideoDialogDemoTopInBottomOut/>
-      <hr className="w-full border-slate-400/40 my-32" />
+      <hr className="w-full border-slate-400/40 my-8" />
       <AppleCardsCarouselDemo />
-      <hr className="w-full border-slate-400/40 my-32" />
+      <hr className="w-full border-slate-400/40 my-8" />
       <InfiniteMovingCardsDemo />
-      <hr className="w-full border-slate-400/40 my-32" />
+      <hr className="w-full border-slate-400/40 my-8" />
       <Faq />
       <Footer />
     </main>

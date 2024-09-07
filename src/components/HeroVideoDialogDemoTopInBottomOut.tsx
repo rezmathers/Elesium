@@ -4,7 +4,7 @@ import ContactPage from "./ContactPage";
 export function HeroVideoDialogDemoTopInBottomOut() {
   return (
     <div className="relative max-w-7xl md:mx-auto xs:mx-4 ">
-         <h2 className=" text-3xl font-bold md:text-5xl  cinzel-decorative-regular  text-white mb-4 text-center">
+         <h2 className=" text-3xl font-bold md:text-5xl  cinzel-decorative-regular  text-white mb-4 text-center pb-8">
              How We Scale Brands To 7-Figure A Month
           </h2>
       <HeroVideoDialog
