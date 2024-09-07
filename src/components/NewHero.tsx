@@ -39,7 +39,7 @@ const NewHero = () => {
             {/* Divider */}
             <div className="my-4 w-28 border-t border-white"></div>
             <p className="text-lg text-gray-500 ">
-            The Social Media Agency For Architects And Interior Designers. We Craft Strategies That Showcase Your Work, Build Your Brand, And Connect You With Clients Who Value Design</p>
+           A Consultancy Firm For Architects And Interior Designers. We Craft Strategies That Showcase Your Work, Build Your Brand, And Connect You With Clients Who Value Design</p>
           </div>
           
           
