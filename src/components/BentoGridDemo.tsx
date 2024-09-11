@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+// eslint-disable-next-line @next/next/no-img-element
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import {
