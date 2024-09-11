@@ -1,4 +1,4 @@
-// eslint-disable-next-line @next/next/no-img-element
+
 import React, { PureComponent } from "react";
 import {
   LineChart,
@@ -145,7 +145,7 @@ export default class Graph1 extends PureComponent {
             branding days with the business to nail down the mission statement
             of the company. Once the mission statement was in place we could
             make sure that our marketing across all platforms was aligned with
-            that statement. That's when results started to explode.
+            that statement. That&apos;s when results started to explode.
           </p>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
@@ -166,7 +166,7 @@ export default class Graph1 extends PureComponent {
           <p className="text-xl ml-4 text-slate-400">
             We have spent the past few years trialling new Facebook ad account
             structures to allow us to scale as aggressively as possible. Our
-            most impactful strategy called the &#39;Bid Mitigation Strategy&#39; was
+            most impactful strategy called the &apos;Bid Mitigation Strategy&apos; was
             used in this business which ultimately allowed us to scale spend to
             new heights.
             <br />
