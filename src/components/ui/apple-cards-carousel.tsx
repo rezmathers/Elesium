@@ -208,10 +208,12 @@ export const Card = ({
               className="max-w-5xl  w-full bg-slate-900/70 z-[60] p-4 rounded-3xl relative overflow-auto hide-scrollbar border border-slate-300/30 flex flex-col md:mx-auto my-6 xs:mx-4"
             >
               <button
-                className="h-8 w-8 self-end bg-white rounded-full flex items-center justify-center"
+                className="h-8 w-8 self-end bg-white/40 rounded-full flex flex-row items-center justify-center fixed"
                 onClick={handleClose}
               >
+                
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
+                
               </button>
               <motion.div
                 layoutId={layout ? `category-${card.title}` : undefined}
@@ -234,6 +236,7 @@ export const Card = ({
                 {card.title}
               </motion.p>
               <div className="py-4">{card.content}</div>
+              
             </motion.div>
           </div>
         )}
@@ -245,20 +248,20 @@ export const Card = ({
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
-        <motion.div
-                layoutId={layout ? `category-${card.title}` : undefined}
-                className="font-medium text-blue-500 flex flex-wrap gap-2"
+          <motion.div
+            layoutId={layout ? `category-${card.title}` : undefined}
+            className="font-medium text-blue-500 flex flex-wrap gap-2"
+          >
+            {card.category.map((category, index) => (
+              <div
+                key={index}
+                className="border border-blue-500 rounded-full px-3 py-1 gap-3"
               >
-                {card.category.map((category, index) => (
-                  <div
-                    key={index}
-                    className="border border-blue-500 rounded-full px-3 py-1 gap-3"
-                  >
-                    {category}
-                  </div>
-                ))}
-              </motion.div>
-              <hr className=" border-slate-50 mt-4 w-full"/>
+                {category}
+              </div>
+            ))}
+          </motion.div>
+          <hr className=" border-slate-50 mt-4 w-full" />
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
             className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 "
