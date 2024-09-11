@@ -211,9 +211,7 @@ export const Card = ({
                 className="h-8 w-8 self-end bg-white/40 rounded-full flex flex-row items-center justify-center fixed"
                 onClick={handleClose}
               >
-                
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
-                
               </button>
               <motion.div
                 layoutId={layout ? `category-${card.title}` : undefined}
@@ -236,7 +234,6 @@ export const Card = ({
                 {card.title}
               </motion.p>
               <div className="py-4">{card.content}</div>
-              
             </motion.div>
           </div>
         )}
@@ -244,7 +241,7 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-80 md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 border border-slate-50"
+        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-80 md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 border border-slate-50/30"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">

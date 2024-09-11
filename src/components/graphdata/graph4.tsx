@@ -87,7 +87,7 @@ export default class Graph1 extends PureComponent {
             The Result
           </h2>
           <ul className="text-xl list-disc pl-10 text-slate-400">
-            <li>GAINED OVER 15K FOLLOWERS IN THE SPAN OF 3 MONTHS</li>
+            <li>GAINED OVER 15K FOLLOWERS IN THE SPAN OF 3 WEEKS</li>
             <li>GOT A SYSTEMISED WORKFLOW</li>
             <li>GOT FREE TEMPLATES FOR THEWRE EMAIL CAMPAIGNS </li>
             <li>GOT TO WORK WITH US FOR 7 MONTHS IN TOTAL..</li>

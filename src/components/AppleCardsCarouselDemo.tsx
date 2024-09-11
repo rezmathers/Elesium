@@ -38,38 +38,38 @@ const DummyContent = () => {
 const data = [
   {
     category: ["Paid ADS", "Email Marketing"],
-    title: "0 to 18 lakhs in 12 months",
+    title: "$0 to $1m in 12 months",
     src: "/images/casestudy1.png",
     content: <Graph1/>,
   },
   {
     category: ["Paid ADS" , "Email Marketing"],
-    title: "50 Lakhs In 6 Months",
+    title: "$9m In 9 Months",
     src:"/images/casestudy2.png",
     content: <Graph2/>,
   },
   {
     category: ["Paid ADS"],
-    title: "We Spent 23Lakhs In 90 Days At 6.5x ROAS",
+    title: "We Spent $2.3m In 90 Days At 6.5x ROAS",
     src: "/images/casestudy3.png",
     content: <Graph3/>,
   },
 
   {
-    category: ["Product"],
-    title: "Maps for your iPhone 15 Pro Max.",
+    category: ["Email Marketing" , "Paid Ads"],
+    title: "Gained 15k Followers in 3 Weeks",
     src: "/images/casestudy4.png",
      content: <Graph4/>,
   },
   {
-    category: ["iOS"],
-    title: "Photography just got better.",
+    category: ["Paid Ads"],
+    title: "60% Leads To Customers",
     src:"/images/casestudy5.png",
     content: <Graph5/>,
   },
   {
-    category: ["Hiring"],
-    title: "Hiring for a Staff Software Engineer",
+    category: ["Email Marketing"],
+    title: "Hired Easy Talents Made A Heavenly Fortune",
     src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <Graph6/>,
   },
