@@ -13,20 +13,18 @@ import {
 
 
 const data = [
-  { name: "Sept", ROAS: 0, adSpend: 0 },
-  { name: "Oct", ROAS: 50000, adSpend: 10000 },
-  { name: "Nov", ROAS: 100000, adSpend: 30000 },
-  { name: "Dec", ROAS: 200000, adSpend: 50000 },
-  { name: "Jan", ROAS: 350000, adSpend: 80000 },
-  { name: "Feb", ROAS: 500000, adSpend: 120000 },
-  { name: "Mar", ROAS: 700000, adSpend: 160000 },
-  { name: "Apr", ROAS: 900000, adSpend: 200000 },
-  { name: "May", ROAS: 1100000, adSpend: 250000 },
-  { name: "Jun", ROAS: 1300000, adSpend: 300000 },
-  { name: "Jul", ROAS: 1500000, adSpend: 350000 },
-  { name: "Aug", ROAS: 1800000, adSpend: 400000 },
+  { name: "Oct", ROAS: 0, adSpend: 0 },
+  { name: "Nov", ROAS: 100000, adSpend: 20000 },
+  { name: "Dec", ROAS: 200000, adSpend: 40000 },
+  { name: "Jan", ROAS: 250000, adSpend: 50000 },
+  { name: "Feb", ROAS: 300000, adSpend: 60000 },
+  { name: "Mar", ROAS: 350000, adSpend: 70000 },
+  { name: "Apr", ROAS: 450000, adSpend: 90000 },
+  { name: "May", ROAS: 550000, adSpend: 100000 },
+  { name: "June", ROAS: 700000, adSpend: 150000 },
+  { name: "July", ROAS: 850000, adSpend: 180000 },
+  { name: "Aug", ROAS: 1000000, adSpend: 220000 },
 ];
-
 export default class Graph1 extends PureComponent {
   render() {
     return (
@@ -51,13 +49,13 @@ export default class Graph1 extends PureComponent {
               stroke="#fff"
               axisLine={{ stroke: "#fff" }}
               tick={{ fill: "#fff" }}
-              tickFormatter={(value) => `${value / 100000} `} // Format Y-axis values with 'k'
+              tickFormatter={(value) => `${value / 1000000} `} // Format Y-axis values with 'k'
               tickCount={5}
             />
             <Tooltip
               formatter={(value) => {
                 if (typeof value === "number") {
-                  return `₹${value / 100000} lakh`;
+                  return `${value / 1000000} mil`;
                 }
                 return value; // Return the value as is if it's not a number
               }}

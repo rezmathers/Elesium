@@ -24,55 +24,7 @@ const data = [
 export default class Graph1 extends PureComponent {
   render() {
     return (
-      <div className="sm:w-full md:w-3/4 bg-slate-950/30 p-4 h-96 rounded-2xl pl-0  mx-auto">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart
-            data={data}
-            margin={{
-              top: 15,
-              right: 30,
-              left: 0, // Set left margin to 0 or adjust as needed
-              bottom: 15,
-            }}
-          >
-            <XAxis
-              dataKey="name" // Use &#39;name&#39; to display the month names
-              stroke="#fff"
-              axisLine={{ stroke: "#fff" }}
-              tick={{ fill: "#fff" }}
-            />
-            <YAxis
-              stroke="#fff"
-              axisLine={{ stroke: "#fff" }}
-              tick={{ fill: "#fff" }}
-              tickFormatter={(value) => `${value / 100000} `} // Format Y-axis values with &#39;k&#39;
-              tickCount={5}
-            />
-            <Tooltip
-              formatter={(value) => {
-                if (typeof value === "number") {
-                  return `₹${value / 100000} lakh`;
-                }
-                return value; // Return the value as is if it&#39;s not a number
-              }}
-              contentStyle={{
-                borderRadius: "8px",
-                padding: "10px",
-                backgroundColor: "rgba(0, 0, 0, 0.7)",
-                color: "#fff",
-              }}
-            />
-            <Legend
-              wrapperStyle={{
-                paddingTop: 20, // Adjust this value to control the spacing from the X-axis
-              }}
-            />
-            <CartesianGrid strokeDasharray="3 3" />
-            <Line type="linear" dataKey="adSpend" stroke="#8884d8" />
-            <Line type="monotone" dataKey="ROAS" stroke="#82ca9d" />
-          </LineChart>
-        </ResponsiveContainer>
-
+      <div className="sm:w-full md:w-3/4 mx-auto">
         <div className="mt-8  h-fit w-full rounded-2xl">
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold text-white">
             The Challenge
@@ -92,12 +44,7 @@ export default class Graph1 extends PureComponent {
             <li>We made them a personal portfolio completely for free</li>
           </ul>
 
-          <div className="h-fit bg-red-300 w-fit rounded-xl object-cover overflow-hidden mt-4 pointer-events-none">
-            <img
-              src="https://cdn.prod.website-files.com/62ce930274c3a44b8bcd0138/62ce930274c3a4aeaecd0149_casestudy-3-thumbnail.png"
-              alt="."
-            />
-          </div>
+         
           <hr className="my-4 border border-slate-300/30" />
 
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">

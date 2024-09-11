@@ -12,14 +12,18 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "Apr", ROAS: 0, adSpend: 0 },
-  { name: "May", ROAS: 400000, adSpend: 110000 },
-  { name: "Jun", ROAS: 1266667, adSpend: 330000 },
-  { name: "Jul", ROAS: 2500000, adSpend: 350000 },
-  { name: "Aug", ROAS: 3000000, adSpend: 560000 },
-  { name: "Sept", ROAS: 3200000, adSpend: 600000 },
-  { name: "Oct", ROAS: 5000000, adSpend: 700000 },
+  { name: "Week 1", adSpend: 100000, ROAS: 800000 },    // Initial phase
+  { name: "Week 2", adSpend: 250000, ROAS: 1500000 },    // Early growth
+  { name: "Week 3", adSpend: 500000, ROAS: 2500000 },    // Stable growth
+  { name: "Week 4", adSpend: 750000, ROAS: 3500000 },    // Increasing growth
+  { name: "Week 5", adSpend: 1000000, ROAS: 4500000 },    // Continued growth
+  { name: "Week 6", adSpend: 1400000, ROAS: 5500000 },    // Strong growth
+  { name: "Week 7", adSpend: 1700000, ROAS: 7000000 },    // Further growth
+  { name: "Week 8", adSpend: 2000000, ROAS: 9500000 },    // Pre-final push
+  { name: "Week 9", adSpend: 2300000, ROAS: 15000000 },   // Reaches goal
 ];
+
+
 
 export default class Graph1 extends PureComponent {
   render() {

@@ -13,15 +13,12 @@ import {
 
 
 const data = [
-  { name: "Apr", ROAS: 0, adSpend: 0 },
-  { name: "May", ROAS: 400000, adSpend: 110000 },
-  { name: "Jun", ROAS: 1266667, adSpend: 330000 },
-  { name: "Jul", ROAS: 2500000, adSpend: 350000 },
-  { name: "Aug", ROAS: 3000000, adSpend: 560000 },
-  { name: "Sept", ROAS: 3200000, adSpend: 600000 },
-  { name: "Oct", ROAS: 5000000, adSpend: 700000 },
+  { name: "Day1", ROAS: 1500 },    // Initial phase
+  { name: "Day5", ROAS: 3000 },   // Steady growth
+  { name: "Day10",  ROAS: 6000 },      // Continued increase
+  { name: "Day15",  ROAS: 9000 },      // Accelerated growth
+  { name: "Day20", ROAS: 15000 },       // Final target reached
 ];
-
 export default class Graph1 extends PureComponent {
   render() {
     return (
@@ -46,13 +43,13 @@ export default class Graph1 extends PureComponent {
               stroke="#fff"
               axisLine={{ stroke: "#fff" }}
               tick={{ fill: "#fff" }}
-              tickFormatter={(value) => `${value / 100000} `} // Format Y-axis values with &#39;k&#39;
+              tickFormatter={(value) => `${value / 1000} k`} // Format Y-axis values with &#39;k&#39;
               tickCount={5}
             />
             <Tooltip
               formatter={(value) => {
                 if (typeof value === "number") {
-                  return `₹${value / 100000} lakh`;
+                  return `${value / 1000}k Followers`;
                 }
                 return value; // Return the value as is if it&#39;s not a number
               }}

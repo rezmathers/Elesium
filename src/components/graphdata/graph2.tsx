@@ -11,15 +11,17 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-
 const data = [
-  { name: "Apr", ROAS: 0, adSpend: 0 },
-  { name: "May", ROAS: 400000, adSpend: 110000 },
-  { name: "Jun", ROAS: 1266667, adSpend: 330000 },
-  { name: "Jul", ROAS: 2500000, adSpend: 350000 },
-  { name: "Aug", ROAS: 3000000, adSpend: 560000 },
-  { name: "Sept", ROAS: 3200000, adSpend: 600000 },
-  { name: "Oct", ROAS: 5000000, adSpend: 700000 },
+  { month: "May", adSpend: 0, ROAS: 0 },   // Initial phase
+  { month: "Jun", adSpend: 150000, ROAS: 600000 },  // Early growth
+  { month: "Jul", adSpend: 200000, ROAS: 900000 },     // Steady increase
+  { month: "Aug", adSpend: 250000, ROAS: 1200000 },    // Continued growth
+  { month: "Sep", adSpend: 350000, ROAS: 1800000 },     // Incremental boost
+  { month: "Oct", adSpend: 400000, ROAS: 2200000 },     // Stronger gains
+  { month: "Nov", adSpend: 450000, ROAS: 3700000 },   // Maintaining momentum
+  { month: "Dec", adSpend: 600000, ROAS: 5000000 }, // Nearing target
+  { month: "Jan", adSpend: 2200000, ROAS: 9000000 }, // Final target reached 
+
 ];
 
 export default class Graph1 extends PureComponent {
@@ -37,7 +39,7 @@ export default class Graph1 extends PureComponent {
             }}
           >
             <XAxis
-              dataKey="name" // Use &#39;name&#39; to display the month names
+              dataKey="month" // Use &#39;name&#39; to display the month names
               stroke="#fff"
               axisLine={{ stroke: "#fff" }}
               tick={{ fill: "#fff" }}
@@ -46,13 +48,13 @@ export default class Graph1 extends PureComponent {
               stroke="#fff"
               axisLine={{ stroke: "#fff" }}
               tick={{ fill: "#fff" }}
-              tickFormatter={(value) => `${value / 100000} `} // Format Y-axis values with &#39;k&#39;
+              tickFormatter={(value) => `${value / 1000000}`} // Format Y-axis values with &#39;k&#39;
               tickCount={5}
             />
             <Tooltip
               formatter={(value) => {
                 if (typeof value === "number") {
-                  return `₹${value / 100000} lakh`;
+                  return `${value / 1000000} mil`;
                 }
                 return value; // Return the value as is if it&#39;s not a number
               }}
