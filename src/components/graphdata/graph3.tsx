@@ -1,3 +1,4 @@
+// eslint-disable-next-line @next/next/no-img-element
 import React, { PureComponent } from "react";
 import {
   LineChart,
@@ -165,7 +166,7 @@ export default class Graph1 extends PureComponent {
           <p className="text-xl ml-4 text-slate-400">
             We have spent the past few years trialling new Facebook ad account
             structures to allow us to scale as aggressively as possible. Our
-            most impactful strategy called the ‘Bid Mitigation Strategy’ was
+            most impactful strategy called the &#39;Bid Mitigation Strategy&#39; was
             used in this business which ultimately allowed us to scale spend to
             new heights.
             <br />
