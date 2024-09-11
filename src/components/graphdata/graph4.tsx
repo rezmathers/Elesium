@@ -60,11 +60,7 @@ export default class Graph1 extends PureComponent {
                 color: "#fff",
               }}
             />
-            <Legend
-              wrapperStyle={{
-                paddingTop: 20, // Adjust this value to control the spacing from the X-axis
-              }}
-            />
+            
             <CartesianGrid strokeDasharray="3 3" />
             <Line type="linear" dataKey="adSpend" stroke="#8884d8" />
             <Line type="monotone" dataKey="ROAS" stroke="#82ca9d" />
@@ -89,13 +85,6 @@ export default class Graph1 extends PureComponent {
             <li>GOT FREE TEMPLATES FOR THEWRE EMAIL CAMPAIGNS </li>
             <li>GOT TO WORK WITH US FOR 7 MONTHS IN TOTAL..</li>
           </ul>
-
-          <div className="h-fit bg-red-300 w-fit rounded-xl object-cover overflow-hidden mt-4 pointer-events-none">
-            <img
-              src="https://cdn.prod.website-files.com/62ce930274c3a44b8bcd0138/62ce930274c3a4aeaecd0149_casestudy-3-thumbnail.png"
-              alt="."
-            />
-          </div>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
             What You Will Learn From This Case Study

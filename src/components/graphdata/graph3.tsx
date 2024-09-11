@@ -49,13 +49,13 @@ export default class Graph1 extends PureComponent {
               stroke="#fff"
               axisLine={{ stroke: "#fff" }}
               tick={{ fill: "#fff" }}
-              tickFormatter={(value) => `${value / 100000} `} // Format Y-axis values with &#39;k&#39;
+              tickFormatter={(value) => `${value / 1000000} `} // Format Y-axis values with &#39;k&#39;
               tickCount={5}
             />
             <Tooltip
               formatter={(value) => {
                 if (typeof value === "number") {
-                  return `₹${value / 100000} lakh`;
+                  return `${value / 1000000} mil`;
                 }
                 return value; // Return the value as is if it&#39;s not a number
               }}
