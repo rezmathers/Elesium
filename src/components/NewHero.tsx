@@ -29,7 +29,7 @@ const NewHero = () => {
         </div>
       </div>
       {/* Hero bottom */}
-      <div className="mx-auto max-w-7xl xs:px-4 md:px-0 py-6">
+      <div className="mx-auto max-w-7xl xs:px-4 lg:px-0 py-6">
         {/* Component */}
         <div className="relative flex max-w-7xl flex-col gap-4 lg:flex-row lg:justify-end">
           {/* Arrow down */}

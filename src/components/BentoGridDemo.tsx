@@ -40,50 +40,53 @@ export function BentoGridDemo() {
   );
 }
 const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-100 to-neutral-800"></div>
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-100 to-neutral-800">
+    
+  </div>
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
+    title: "Social Media Management",
     description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    header: <img src="./images/media-management.jpeg" alt="" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"/>,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
+    title: "Content Creation",
     description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    header: <img src="./images/content-creation.jpeg" alt="" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"/>,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
+    title: "Community Management",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    header: <img src="./images/community.jpeg" alt="" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"/>,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Joy of Creation",
+    title: "Analytics and Reporting",
     description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
+    header: <img src="./images/analytics.jpeg" alt="" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"/>,
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Spirit of Adventure",
+    title: "Social Media Strategy and Consulting",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    header: <img src="./images/strategy&consulting.jpeg" alt="" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"/>,
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Lead Generation",
+    description: "Join the quest for understanding and enlightenment.",
+    header: <img src="./images/leads.jpeg" alt="" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"/>,
+    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+  },
+  
+  {
+    title: "Reputation Management",
     description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
+    header: <img src="./images/reputation.jpeg" alt="" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"/>,
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];

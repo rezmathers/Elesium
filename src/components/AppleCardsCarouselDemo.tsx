@@ -7,7 +7,9 @@ import '../components/graphdata/graph1'
 import Graph1 from "../components/graphdata/graph1";
 import Graph2 from "./graphdata/graph2";
 import Graph3 from "./graphdata/graph3";
-
+import Graph4 from "./graphdata/graph4";
+import Graph5 from "./graphdata/graph5";
+import Graph6 from "./graphdata/graph6";
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -37,38 +39,38 @@ const data = [
   {
     category: ["Paid ADS", "Email Marketing"],
     title: "0 to 18 lakhs in 12 months",
-    src: "https://live.staticflickr.com/65535/49389103952_ff4b2cf256.jpg",
+    src: "/images/casestudy1.png",
     content: <Graph1/>,
   },
   {
     category: ["Paid ADS" , "Email Marketing"],
     title: "50 Lakhs In 6 Months",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src:"/images/casestudy2.png",
     content: <Graph2/>,
   },
   {
     category: ["Paid ADS"],
     title: "We Spent 23Lakhs In 90 Days At 6.5x ROAS",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/casestudy3.png",
     content: <Graph3/>,
   },
 
   {
     category: ["Product"],
     title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    src: "/images/casestudy4.png",
+     content: <Graph4/>,
   },
   {
     category: ["iOS"],
     title: "Photography just got better.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    src:"/images/casestudy5.png",
+    content: <Graph5/>,
   },
   {
     category: ["Hiring"],
     title: "Hiring for a Staff Software Engineer",
     src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    content: <Graph6/>,
   },
 ];

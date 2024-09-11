@@ -9,7 +9,6 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import ContactPage from "../ContactPage";
 
 const data = [
   { name: "Apr", ROAS: 0, adSpend: 0 },
@@ -78,24 +77,25 @@ export default class Graph1 extends PureComponent {
             The Challenge
           </h2>
           <ul className="text-xl list-disc pl-10 text-slate-400">
-            <li>Organisation and campaign management</li>
-            <li>Maintaining brand power</li>
-            <li>Combatting ad saturation</li>
+            <li>
+              Scale and maintain large ad budgets whilst battling ad fatigue
+            </li>
+            <li>Develop brand positioning for increased customer response</li>
+            <li>Market and scale internationally</li>
           </ul>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
             The Result
           </h2>
           <ul className="text-xl list-disc pl-10 text-slate-400">
-            <li>Systemised workloads</li>
-            <li>Brand mission congruent with marketing</li>
-            <li>Fresh and highly effective creatives </li>
-            <li>₹ 8lakh p/m reliable revenue figures</li>
+            <li>527% Revenue increase from the previous year</li>
+            <li>Increasing returning customer rate to 21%</li>
+            <li>Achieving a 24-hour sales record of $364k</li>
           </ul>
 
           <div className="h-fit bg-red-300 w-fit rounded-xl object-cover overflow-hidden mt-4 pointer-events-none">
             <img
-              src="https://cdn.prod.website-files.com/62ce930274c3a44b8bcd0138/62ce930274c3a4aeaecd0149_casestudy-3-thumbnail.png"
+              src="https://cdn.prod.website-files.com/62ce930274c3a44b8bcd0138/62ce930274c3a4e06ccd0148_casestudy-2-thumbnail.jpg"
               alt="."
             />
           </div>
@@ -104,122 +104,136 @@ export default class Graph1 extends PureComponent {
             What You Will Learn From This Case Study
           </h2>
           <ul className="text-xl custom-list pl-10 text-slate-400">
-            <li>Why systemising workloads is essential for growth</li>
-            <li>How to make sure you don&#39;t lose brand strength</li>
-            <li>How to plan and launch new and effective creatives</li>
+            <li>Why branding is essential for next-level growth</li>
+            <li>How to broaden your market internationally</li>
+            <li>How to structure FB ad accounts for rapid scaling</li>
+            <li> How to leverage new opportunities when they appear</li>
           </ul>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
             Introduction
           </h2>
           <p className="text-xl ml-4 text-slate-400">
-            This business is structured as a giveaway company meaning that
-            buying a product from the website would automatically enter you into
-            winning a large prize. You will see in the Shopify screenshot above
-            that these giveaway campaigns are run on and off. This means that
-            revenue was not consistent but rather worked periodically.
+            When we first started working with this brand we initially performed
+            prescriptive analysis (PA). PA allows us to gain a full
+            understanding of what marketing techniques had been previously used
+            to scale the business to a respectable monthly revenue of just over
+            $1m.
             <br />
             <br />
-            For example, one giveaway would run for 6 weeks and there would be a
-            4-week break before running the next one. By nature, the business
-            had a large number of complexities so we took a very systemised
-            approach to minimise any issues caused by this. An extremely high
-            volume of new marketing was required and this is how we tackled it…
+            In addition, our research showed us exactly where our focus needed
+            to be in order to increase ad spend with a profitable return.
+            Ultimately this is what led to our decision-making process that
+            increased revenue by 5X.
           </p>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
-            Campaign Management
+            Branding
           </h2>
           <p className="text-xl ml-4 text-slate-400">
-            Every week, this business would change its offering. For example… At
-            the start of the giveaway campaign, the offer would be &#39;buy one
-            get one free. The week after would be &#39;15% off sitewide&#39;
-            This rapid change in offerings would mean new creatives and copy
-            angles every 7 days.
+            A big focus for this brand right before we began to scale spending
+            was to nail the branding. A store will make you a million but a
+            brand will make you a billion. At Affluent we are strong believers
+            that your lifetime value metrics will depend greatly on the message
+            that your brand portrays.
             <br />
             <br />
-            A high turnover of content and other marketing assets led us to
-            create a management machine which kept every team member accountable
-            for meeting deliverables. We aimed for 7 new video creatives every
-            week with 7 pictures to accommodate. Each creative was scripted
-            using effective frameworks and sent to the client to produce 2 weeks
-            in advance. Additionally, 3 email campaigns were sent out each week.
-            <br />
-            <br />
-            We decided to create a management dashboard. Each member of the team
-            had access to this dashboard to stay informed of essential
-            deadlines. This dashboard had an additional positive effect in that
-            it helped us with tracking results. We would replicate highly
-            effective campaigns in the following giveaways. And storing this
-            data meant we could quickly figure out which offer yielded the best
-            results on an ongoing basis.
+            This brand sells clothing and accessories to the blue-collar niche
+            so we wanted to make sure that our messaging was authentic to the
+            day to day work of the blue-collar marketplace. We did multiple
+            branding days with the business to nail down the mission statement
+            of the company. Once the mission statement was in place we could
+            make sure that our marketing across all platforms was aligned with
+            that statement. That's when results started to explode.
           </p>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
-            Combatting Brand Dilution
+            International Scaling
           </h2>
           <p className="text-xl ml-4 text-slate-400">
-            Naturally, with such a high level of creative assets, businesses run
-            the risk of diluting their brand. Each ad iteration has the
-            potential to lose brand messaging and therefore effectiveness. A
-            brand guidance document was an essential tool for developing
-            marketing assets. This ensured that every aspect of our marketing
-            (FB ads, Email copy, Keywords, Video style) Was absolutely on point
-            with the desired effect.
+            During our analysis phase, we discovered that there was an untapped
+            marketplace in Mexico. The product and brand were a perfect fit and
+            so we decided to launch ads and email campaigns by translating the
+            language to Spanish. With our ads, we decided to keep the targeting
+            completely broad and the Facebook algorithm rewarded us for doing
+            so.
           </p>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
-            8 Figure Ad Frameworks
+            8 Figure Ad Account
           </h2>
           <p className="text-xl ml-4 text-slate-400">
-            Scripting and designing highly effective video ads come with plenty
-            of experience and marketing psychology. In the majority of our ads,
-            we use 2 main frameworks.
+            We have spent the past few years trialling new Facebook ad account
+            structures to allow us to scale as aggressively as possible. Our
+            most impactful strategy called the ‘Bid Mitigation Strategy’ was
+            used in this business which ultimately allowed us to scale spend to
+            new heights.
             <br />
             <br />
-            A.I.D.A Attention, Interest, Desire, Action
+            The bid mitigation strategy is structured in the following way…
             <br />
             <br />
-            P.A.S Problem, Agitate, Solution
+            1X ABO Campaign per country (For testing)
             <br />
             <br />
-            These frameworks are a good starting block for video ad scripting.
-            They have a proven methodology so we use them as frequently as
-            possible.
+            1X CBO Campaign (Scaling)
             <br />
             <br />
-            After nailing the ad scripts we alter and test hundreds of different
-            hooks. The &#39;Hook&#39; is the first 2 seconds of a video which is
-            directly responsible for grabbing people&#39;s attention on social
-            platforms.
+            1X Minimum ROAS campaign (Maintaining)
             <br />
             <br />
-            An ad is often a story of your product or customer. One of the best
-            ways to start a story is through the ‘struggle’. This allows you to
-            represent how a product can fix the user&#39;s need. Or better yet,
-            change their lives.
+            1X Cost Cap Campaign (Stabilising)
+            <br />
+            <br />
+            In essence, this ad account structure means we can play campaigns
+            off each other and make sure they achieve a minimum profitable ROI.
+            Each ad campaign uses a different bid strategy and so is made
+            responsible for achieving the desired result as we continuously
+            increase the budget.
+            <br />
+            <br />
+            Of course, the ad account structure is not just the only aspect of a
+            successful marketing funnel… An effective and reliable flow of new
+            content is key to scaling without encountering ad fatigue. We are
+            currently writing 7 new ad scripts and pieces of copy every week to
+            launch relentless testing to maintain the massive growth.
+          </p>
+          <hr className="my-4 border border-slate-300/30" />
+          <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
+            Omnichannel Expansion
+          </h2>
+          <p className="text-xl ml-4 text-slate-400">
+            With all of our clients, we are constantly looking at new ways to
+            increase profitability and scale at TOF. TikTok is currently a
+            goldmine of opportunity for brands to break into and with the proper
+            guidance can be extremely lucrative.
+            <br />
+            <br />
+            With our current success on Facebook for this brand, we decided to
+            tweak the video ads into a TikTok style format. With just a few
+            minor changes, we turned on the tap of another highly profitable TOF
+            source.
+            <br />
+            <br />
+            Omnichannel marketing is often the end game for large companies like
+            this. As Facebook and TikTok progressed… We then took control of all
+            marketing channels for the business. Including, FB, Insta, TikTok,
+            Google ads, Email marketing, CRO, and Ad content editing.
           </p>
           <hr className="my-4 border border-slate-300/30" />
           <h2 className="md:text-3xl xs:text-2xl mb-2 font-semibold ">
             Conclusion
           </h2>
           <p className="text-xl ml-4 text-slate-400">
-            Tightly managed operations will have an extremely positive effect on
-            your brand. Organisation in all aspects of your marketing will allow
-            you to understand the root cause of your success and double down on
-            what works.
+            There is a multitude of techniques that need the implementation to
+            scale brands to 8 figures.
             <br />
             <br />
-            Brand messaging is the overarching factor that determines success…
-            Creating a brand sheet means you can stick to creating ad assets
-            that actually work.
-            <br />
-            <br />
-            Utilising proven ad frameworks will allow you to scale without
-            gambling. Tiny iterations on a proven angle will give ad accounts
-            new life and allow even further success.
+            Each marketing platform has certain nuances that require true
+            specialist capabilities to achieve good results. Advancing each one
+            of these specialisms must remain the sole focus of marketing in
+            order to scale and maintain competitiveness.
           </p>
-          
           <div className="h-60" id="bottom"></div>
         </div>
       </div>
