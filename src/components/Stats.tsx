@@ -12,7 +12,7 @@ const Stats = () => {
           <BlurFade delay={0.5} inView>
             <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-fit border border-white/40">
             <div className="text-xl font-semibold">
-              <NumberTicker value={54000000}/>+
+              $<NumberTicker value={54000000}/>+
               <p>ROAS Generated</p>
             </div>
           </div>
@@ -22,7 +22,7 @@ const Stats = () => {
           <BlurFade delay={0.75} inView>
              <div className="bg-slate-300/10 backdrop-blur-2xl rounded-lg py-10 px-5 flex flex-col justify-between h-fit border border-white/40">
             <div className="text-xl font-semibold">
-            <NumberTicker value={80000}/>+
+            $<NumberTicker value={30000}/>+
               <p>Daily Ad Spend</p>
             </div>
 

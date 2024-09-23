@@ -1,5 +1,6 @@
 "use client";
 
+import { Space } from "lucide-react";
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
@@ -12,24 +13,34 @@ const Faq = () => {
 
   const faqs = [
     {
-      title: "What is your policy on distribution?",
+      title: "What services does Elesium Online offer?",
       content:
-        "Pellentesque in nisi aliquet, pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl.",
+        "Elesium Online provides social media marketing services, including content creation, ad management, strategy development, social media account optimization, and audience engagement solutions.",
     },
     {
-      title: "How can I contribute to Flowspark?",
+      title: " How can social media marketing benefit my business?",
       content:
-        "Sed viverra enim ac turpis posuere consectetur. Sed enim nibh, consequat vitae lacus eu, ullamcorper ullamcorper massa.",
+        "Social media marketing can increase brand awareness, drive traffic to your website, improve customer engagement, and generate leads, helping to grow your business effectively.",
     },
     {
-      title: "What other themes do you have?",
+      title: "What platforms do you specialize in?",
       content:
-        "Pellentesque purus eget, imperdiet turpis. Fusce at enim quis neque viverra convallis. Vivamus ut elementum leo, eget tempus nisl.",
+        "We specialize in Facebook, Instagram, LinkedIn, and Google Ads, as well as other platforms depending on your specific audience and industry needs.",
     },
     {
-      title: "What is your policy on distribution?",
+      title: "How do you measure success?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac venenatis est, at convallis magna.",
+        "We track metrics such as engagement, reach, website traffic, conversions, and ROI to evaluate campaign performance and ensure your business objectives are met.",
+    },
+    {
+      title: " Do you offer customized solutions for each business?",
+      content:
+        " Yes, every strategy we design is tailored to the unique goals and target audience of each client to ensure maximum impact.",
+    },
+    {
+      title: "What is your pricing model?",
+      content:
+        "Our pricing is customized based on the specific needs and goals of your business. Contact us for a free consultation and detailed quote.",
     },
   ];
 
@@ -42,9 +53,10 @@ const Faq = () => {
               <h2 className="font-bold text-3xl md:text-5xl">General FAQs</h2>
               <div className="mt-4 max-w-lg">
                 <p className="text-gray-500 text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magna
-                  fringilla urna
+                  It&apos;s key to address common queries potential clients
+                  might have about our social media marketing services.
+                  Here&apos;s a list of frequently asked questions (and
+                  suggested answers):
                 </p>
               </div>
             </div>
@@ -55,11 +67,12 @@ const Faq = () => {
                   alt="Placeholder"
                   className="inline-block h-12 w-12 object-cover rounded-full p-1"
                 />
+                
                 <div className="flex flex-col gap-1.5">
                   <h5 className="text-xl font-bold">Still have questions?</h5>
                   <div className="max-w-sm">
                     <p className="text-white text-sm sm:text-base">
-                      Can’t find the answer you’re looking for? Please chat to
+                      Can&apos;t find the answer you&apos;re looking for? Please chat to
                       our support.
                     </p>
                   </div>
@@ -67,25 +80,23 @@ const Faq = () => {
               </div>
               <div className="mb-6 mt-8 h-[0.5px] w-full bg-slate-300/30"></div>
               <div className="items-center rounded-md bg-black/20 px-6 py-3 text-center font-semibold text-white border border-slate-200/20 flex md:flex-row xs:flex-col xs:gap-4 justify-between">
-             
-                  Get In Touch
-               
+                Get In Touch
                 <div className="flex md:gap-3 xs:justify-between xs:w-full md:w-fit">
                   {/* Mail Icon */}
                   <a href="https://ig.me/m/elesium__" target="_blank">
-                  <img src="./instagram.svg" alt="Elesuim" className='h-8'/>
+                    <img src="./instagram.svg" alt="Elesuim" className="h-8" />
                   </a>
                   {/* Facebook Icon */}
                   <a href="https://facebook.com" target="_blank">
-                  <img src="./fb.svg" alt="Elesuim" className='h-8'/>
+                    <img src="./fb.svg" alt="Elesuim" className="h-8" />
                   </a>
                   {/* LinkedIn Icon */}
                   <a href="https://linkedin.com" target="_blank">
-                  <img src="./linkdin.svg" alt="Elesuim" className='h-8'/>
+                    <img src="./linkdin.svg" alt="Elesuim" className="h-8" />
                   </a>
                   {/* Instagram Icon */}
                   <a href="mailto:shah@elesium.com" target="_blank">
-                  <img src="./gmail.svg" alt="Elesuim" className='h-8'/>
+                    <img src="./gmail.svg" alt="Elesuim" className="h-8" />
                   </a>
                 </div>
               </div>
@@ -118,7 +129,7 @@ const Faq = () => {
                   classNames="faq-content"
                   unmountOnExit
                 >
-                  <div className="faq-content w-full overflow-hidden mb-4 max-w-2xl lg:max-w-4xl">
+                  <div className="faq-content w-full overflow-hidden mb-4 max-w-2xl lg:max-w-4xl border-t border-white pt-4 mt-4">
                     <p className="text-sm sm:text-base">{faq.content}</p>
                   </div>
                 </CSSTransition>
